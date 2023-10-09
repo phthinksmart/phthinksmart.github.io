@@ -1,0 +1,1214 @@
+<!DOCTYPE html>
+<html lang="id" prefix="og: https://ogp.me/ns#">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="profile" href="https://gmpg.org/xfn/11">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>If Arraylist Contains Java - QnA</title>
+    <meta name="description" content="If Arraylist Contains Java, Java Collections and Generics 13 | ArrayList in Java | Part 4 | contains() | containsAll(), , , , Abhay Redkar, 2020-01-05T03:00:04.000000Z, 20, JAVA ARRAYLIST CONTAINS METHOD EXAMPLE DEMO - YouTube, www.youtube.com, 1280 x 720, jpeg, , 20, if-arraylist-contains-java, QnA" />
+    <meta name="robots" content="index,follow" />
+    <meta property="og:locale" content="id_ID" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="If Arraylist Contains Java - QnA" />
+    <meta property="og:description" content="If Arraylist Contains Java, Java Collections and Generics 13 | ArrayList in Java | Part 4 | contains() | containsAll(), , , , Abhay Redkar, 2020-01-05T03:00:04.000000Z, 20, JAVA ARRAYLIST CONTAINS METHOD EXAMPLE DEMO - YouTube, www.youtube.com, 1280 x 720, jpeg, , 20, if-arraylist-contains-java, QnA" />
+    <meta property="og:site_name" content="QnA" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="If Arraylist Contains Java - QnA" />
+    <meta name="twitter:description" content="If Arraylist Contains Java, Java Collections and Generics 13 | ArrayList in Java | Part 4 | contains() | containsAll(), , , , Abhay Redkar, 2020-01-05T03:00:04.000000Z, 20, JAVA ARRAYLIST CONTAINS METHOD EXAMPLE DEMO - YouTube, www.youtube.com, 1280 x 720, jpeg, , 20, if-arraylist-contains-java, QnA" />
+    <link rel='stylesheet' id='generate-style-css' href='https://phthinksmart.github.io/css/main.min.css'?ver=3.2.4'
+        media='all' />
+    <link rel='stylesheet' id='ez-toc-css' href='https://phthinksmart.github.io/css/screen.min.css'?ver=2.0.40' media='all' />
+    <style id='generate-style-inline-css'>
+        body {
+            background-color: #f7f7f7;
+            color: #222222;
+        }
+
+        a {
+            color: #1e73be;
+        }
+
+        a:hover,
+        a:focus,
+        a:active {
+            color: #000000;
+        }
+
+        .wp-block-group__inner-container {
+            max-width: 1200px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .generate-back-to-top {
+            font-size: 20px;
+            border-radius: 3px;
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            line-height: 40px;
+            width: 40px;
+            text-align: center;
+            z-index: 10;
+            transition: opacity 300ms ease-in-out;
+            opacity: 0.1;
+            transform: translateY(1000px);
+        }
+
+        .generate-back-to-top__show {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        .navigation-search {
+            position: absolute;
+            left: -99999px;
+            pointer-events: none;
+            visibility: hidden;
+            z-index: 20;
+            width: 100%;
+            top: 0;
+            transition: opacity 100ms ease-in-out;
+            opacity: 0;
+        }
+
+        .navigation-search.nav-search-active {
+            left: 0;
+            right: 0;
+            pointer-events: auto;
+            visibility: visible;
+            opacity: 1;
+        }
+
+        .navigation-search input[type="search"] {
+            outline: 0;
+            border: 0;
+            vertical-align: bottom;
+            line-height: 1;
+            opacity: 0.9;
+            width: 100%;
+            z-index: 20;
+            border-radius: 0;
+            -webkit-appearance: none;
+            height: 60px;
+        }
+
+        .navigation-search input::-ms-clear {
+            display: none;
+            width: 0;
+            height: 0;
+        }
+
+        .navigation-search input::-ms-reveal {
+            display: none;
+            width: 0;
+            height: 0;
+        }
+
+        .navigation-search input::-webkit-search-decoration,
+        .navigation-search input::-webkit-search-cancel-button,
+        .navigation-search input::-webkit-search-results-button,
+        .navigation-search input::-webkit-search-results-decoration {
+            display: none;
+        }
+
+        .gen-sidebar-nav .navigation-search {
+            top: auto;
+            bottom: 0;
+        }
+
+        :root {
+            --contrast: #222222;
+            --contrast-2: #575760;
+            --contrast-3: #b2b2be;
+            --base: #f0f0f0;
+            --base-2: #f7f8f9;
+            --base-3: #ffffff;
+            --accent: #1e73be;
+        }
+
+        .has-contrast-color {
+            color: var(--contrast);
+        }
+
+        .has-contrast-background-color {
+            background-color: var(--contrast);
+        }
+
+        .has-contrast-2-color {
+            color: var(--contrast-2);
+        }
+
+        .has-contrast-2-background-color {
+            background-color: var(--contrast-2);
+        }
+
+        .has-contrast-3-color {
+            color: var(--contrast-3);
+        }
+
+        .has-contrast-3-background-color {
+            background-color: var(--contrast-3);
+        }
+
+        .has-base-color {
+            color: var(--base);
+        }
+
+        .has-base-background-color {
+            background-color: var(--base);
+        }
+
+        .has-base-2-color {
+            color: var(--base-2);
+        }
+
+        .has-base-2-background-color {
+            background-color: var(--base-2);
+        }
+
+        .has-base-3-color {
+            color: var(--base-3);
+        }
+
+        .has-base-3-background-color {
+            background-color: var(--base-3);
+        }
+
+        .has-accent-color {
+            color: var(--accent);
+        }
+
+        .has-accent-background-color {
+            background-color: var(--accent);
+        }
+
+        body,
+        button,
+        input,
+        select,
+        textarea {
+            font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+        }
+
+        body {
+            line-height: 1.5;
+        }
+
+        .entry-content>[class*="wp-block-"]:not(:last-child) {
+            margin-bottom: 1.5em;
+        }
+
+        .main-navigation .main-nav ul ul li a {
+            font-size: 14px;
+        }
+
+        .sidebar .widget,
+        .footer-widgets .widget {
+            font-size: 17px;
+        }
+
+        @media (max-width:768px) {
+            h1 {
+                font-size: 31px;
+            }
+
+            h2 {
+                font-size: 27px;
+            }
+
+            h3 {
+                font-size: 24px;
+            }
+
+            h4 {
+                font-size: 22px;
+            }
+
+            h5 {
+                font-size: 19px;
+            }
+        }
+
+        .top-bar {
+            background-color: #636363;
+            color: #ffffff;
+        }
+
+        .top-bar a {
+            color: #ffffff;
+        }
+
+        .top-bar a:hover {
+            color: #303030;
+        }
+
+        .site-header {
+            background-color: #ffffff;
+        }
+
+        .main-title a,
+        .main-title a:hover {
+            color: #222222;
+        }
+
+        .site-description {
+            color: #757575;
+        }
+
+        .main-navigation,
+        .main-navigation ul ul {
+            background-color: #ed4250;
+        }
+
+        .main-navigation .main-nav ul li a,
+        .main-navigation .menu-toggle,
+        .main-navigation .menu-bar-items {
+            color: #ffffff;
+        }
+
+        .main-navigation .main-nav ul li:not([class*="current-menu-"]):hover>a,
+        .main-navigation .main-nav ul li:not([class*="current-menu-"]):focus>a,
+        .main-navigation .main-nav ul li.sfHover:not([class*="current-menu-"])>a,
+        .main-navigation .menu-bar-item:hover>a,
+        .main-navigation .menu-bar-item.sfHover>a {
+            color: #ffffff;
+            background-color: #c42f2f;
+        }
+
+        button.menu-toggle:hover,
+        button.menu-toggle:focus {
+            color: #ffffff;
+        }
+
+        .main-navigation .main-nav ul li[class*="current-menu-"]>a {
+            color: #ffffff;
+            background-color: #c42f2f;
+        }
+
+        .navigation-search input[type="search"],
+        .navigation-search input[type="search"]:active,
+        .navigation-search input[type="search"]:focus,
+        .main-navigation .main-nav ul li.search-item.active>a,
+        .main-navigation .menu-bar-items .search-item.active>a {
+            color: #ffffff;
+            background-color: #c42f2f;
+        }
+
+        .main-navigation ul ul {
+            background-color: #c42f2f;
+        }
+
+        .main-navigation .main-nav ul ul li a {
+            color: #ffffff;
+        }
+
+        .main-navigation .main-nav ul ul li:not([class*="current-menu-"]):hover>a,
+        .main-navigation .main-nav ul ul li:not([class*="current-menu-"]):focus>a,
+        .main-navigation .main-nav ul ul li.sfHover:not([class*="current-menu-"])>a {
+            color: #fcd9d6;
+            background-color: #c42f2f;
+        }
+
+        .main-navigation .main-nav ul ul li[class*="current-menu-"]>a {
+            color: #fcd9d6;
+            background-color: #c42f2f;
+        }
+
+        .separate-containers .inside-article,
+        .separate-containers .comments-area,
+        .separate-containers .page-header,
+        .one-container .container,
+        .separate-containers .paging-navigation,
+        .inside-page-header {
+            background-color: #ffffff;
+        }
+
+        .entry-title a {
+            color: #222222;
+        }
+
+        .entry-title a:hover {
+            color: #55555e;
+        }
+
+        .entry-meta {
+            color: #595959;
+        }
+
+        .sidebar .widget {
+            background-color: #ffffff;
+        }
+
+        .footer-widgets {
+            background-color: #ffffff;
+        }
+
+        .footer-widgets .widget-title {
+            color: #000000;
+        }
+
+        .site-info {
+            color: #ffffff;
+            background-color: #55555e;
+        }
+
+        .site-info a {
+            color: #ffffff;
+        }
+
+        .site-info a:hover {
+            color: #d3d3d3;
+        }
+
+        .footer-bar .widget_nav_menu .current-menu-item a {
+            color: #d3d3d3;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        input[type="url"],
+        input[type="password"],
+        input[type="search"],
+        input[type="tel"],
+        input[type="number"],
+        textarea,
+        select {
+            color: #666666;
+            background-color: #fafafa;
+            border-color: #cccccc;
+        }
+
+        input[type="text"]:focus,
+        input[type="email"]:focus,
+        input[type="url"]:focus,
+        input[type="password"]:focus,
+        input[type="search"]:focus,
+        input[type="tel"]:focus,
+        input[type="number"]:focus,
+        textarea:focus,
+        select:focus {
+            color: #666666;
+            background-color: #ffffff;
+            border-color: #bfbfbf;
+        }
+
+        button,
+        html input[type="button"],
+        input[type="reset"],
+        input[type="submit"],
+        a.button,
+        a.wp-block-button__link:not(.has-background) {
+            color: #ffffff;
+            background-color: #55555e;
+        }
+
+        button:hover,
+        html input[type="button"]:hover,
+        input[type="reset"]:hover,
+        input[type="submit"]:hover,
+        a.button:hover,
+        button:focus,
+        html input[type="button"]:focus,
+        input[type="reset"]:focus,
+        input[type="submit"]:focus,
+        a.button:focus,
+        a.wp-block-button__link:not(.has-background):active,
+        a.wp-block-button__link:not(.has-background):focus,
+        a.wp-block-button__link:not(.has-background):hover {
+            color: #ffffff;
+            background-color: #3f4047;
+        }
+
+        a.generate-back-to-top {
+            background-color: rgba(0, 0, 0, 0.4);
+            color: #ffffff;
+        }
+
+        a.generate-back-to-top:hover,
+        a.generate-back-to-top:focus {
+            background-color: rgba(0, 0, 0, 0.6);
+            color: #ffffff;
+        }
+
+        @media (max-width:768px) {
+
+            .main-navigation .menu-bar-item:hover>a,
+            .main-navigation .menu-bar-item.sfHover>a {
+                background: none;
+                color: #ffffff;
+            }
+        }
+
+        .nav-below-header .main-navigation .inside-navigation.grid-container,
+        .nav-above-header .main-navigation .inside-navigation.grid-container {
+            padding: 0px 20px 0px 20px;
+        }
+
+        .site-main .wp-block-group__inner-container {
+            padding: 40px;
+        }
+
+        .separate-containers .paging-navigation {
+            padding-top: 20px;
+            padding-bottom: 20px;
+        }
+
+        .entry-content .alignwide,
+        body:not(.no-sidebar) .entry-content .alignfull {
+            margin-left: -40px;
+            width: calc(100% + 80px);
+            max-width: calc(100% + 80px);
+        }
+
+        .rtl .menu-item-has-children .dropdown-menu-toggle {
+            padding-left: 20px;
+        }
+
+        .rtl .main-navigation .main-nav ul li.menu-item-has-children>a {
+            padding-right: 20px;
+        }
+
+        @media (max-width:768px) {
+
+            .separate-containers .inside-article,
+            .separate-containers .comments-area,
+            .separate-containers .page-header,
+            .separate-containers .paging-navigation,
+            .one-container .site-content,
+            .inside-page-header {
+                padding: 30px;
+            }
+
+            .site-main .wp-block-group__inner-container {
+                padding: 30px;
+            }
+
+            .inside-top-bar {
+                padding-right: 30px;
+                padding-left: 30px;
+            }
+
+            .inside-header {
+                padding-right: 30px;
+                padding-left: 30px;
+            }
+
+            .widget-area .widget {
+                padding-top: 30px;
+                padding-right: 30px;
+                padding-bottom: 30px;
+                padding-left: 30px;
+            }
+
+            .footer-widgets-container {
+                padding-top: 30px;
+                padding-right: 30px;
+                padding-bottom: 30px;
+                padding-left: 30px;
+            }
+
+            .inside-site-info {
+                padding-right: 30px;
+                padding-left: 30px;
+            }
+
+            .entry-content .alignwide,
+            body:not(.no-sidebar) .entry-content .alignfull {
+                margin-left: -30px;
+                width: calc(100% + 60px);
+                max-width: calc(100% + 60px);
+            }
+
+            .one-container .site-main .paging-navigation {
+                margin-bottom: 20px;
+            }
+        }
+
+        /* End cached CSS */
+        .is-right-sidebar {
+            width: 30%;
+        }
+
+        .is-left-sidebar {
+            width: 30%;
+        }
+
+        .site-content .content-area {
+            width: 70%;
+        }
+
+        @media (max-width:768px) {
+
+            .main-navigation .menu-toggle,
+            .sidebar-nav-mobile:not(#sticky-placeholder) {
+                display: block;
+            }
+
+            .main-navigation ul,
+            .gen-sidebar-nav,
+            .main-navigation:not(.slideout-navigation):not(.toggled) .main-nav>ul,
+            .has-inline-mobile-toggle #site-navigation .inside-navigation>*:not(.navigation-search):not(.main-nav) {
+                display: none;
+            }
+
+            .nav-align-right .inside-navigation,
+            .nav-align-center .inside-navigation {
+                justify-content: space-between;
+            }
+        }
+    </style>
+    <link rel="icon" href="https://phthinksmart.github.io/img/cropped-soalbelajar-32x32.png" sizes="32x32" />
+    <link rel="icon" href="https://phthinksmart.github.io/img/cropped-soalbelajar-192x192.png" sizes="192x192" />
+    <link rel="apple-touch-icon" href="https://phthinksmart.github.io/img/cropped-soalbelajar-180x180.png" />
+    <meta name="msapplication-TileImage" content="https://phthinksmart.github.io/img/cropped-soalbelajar-270x270.png" />
+</head>
+
+<body
+    class="home blog wp-custom-logo wp-embed-responsive right-sidebar nav-above-header separate-containers nav-search-enabled nav-aligned-center header-aligned-center dropdown-hover"
+    itemtype="https://schema.org/Blog" itemscope>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false"
+        role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+        <defs>
+            <filter id="wp-duotone-dark-grayscale">
+                <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
+                    values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+                <feComponentTransfer color-interpolation-filters="sRGB">
+                    <feFuncR type="table" tableValues="0 0.49803921568627" />
+                    <feFuncG type="table" tableValues="0 0.49803921568627" />
+                    <feFuncB type="table" tableValues="0 0.49803921568627" />
+                    <feFuncA type="table" tableValues="1 1" />
+                </feComponentTransfer>
+                <feComposite in2="SourceGraphic" operator="in" />
+            </filter>
+        </defs>
+    </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false"
+        role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+        <defs>
+            <filter id="wp-duotone-grayscale">
+                <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
+                    values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+                <feComponentTransfer color-interpolation-filters="sRGB">
+                    <feFuncR type="table" tableValues="0 1" />
+                    <feFuncG type="table" tableValues="0 1" />
+                    <feFuncB type="table" tableValues="0 1" />
+                    <feFuncA type="table" tableValues="1 1" />
+                </feComponentTransfer>
+                <feComposite in2="SourceGraphic" operator="in" />
+            </filter>
+        </defs>
+    </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false"
+        role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+        <defs>
+            <filter id="wp-duotone-purple-yellow">
+                <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
+                    values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+                <feComponentTransfer color-interpolation-filters="sRGB">
+                    <feFuncR type="table" tableValues="0.54901960784314 0.98823529411765" />
+                    <feFuncG type="table" tableValues="0 1" />
+                    <feFuncB type="table" tableValues="0.71764705882353 0.25490196078431" />
+                    <feFuncA type="table" tableValues="1 1" />
+                </feComponentTransfer>
+                <feComposite in2="SourceGraphic" operator="in" />
+            </filter>
+        </defs>
+    </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false"
+        role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+        <defs>
+            <filter id="wp-duotone-blue-red">
+                <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
+                    values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+                <feComponentTransfer color-interpolation-filters="sRGB">
+                    <feFuncR type="table" tableValues="0 1" />
+                    <feFuncG type="table" tableValues="0 0.27843137254902" />
+                    <feFuncB type="table" tableValues="0.5921568627451 0.27843137254902" />
+                    <feFuncA type="table" tableValues="1 1" />
+                </feComponentTransfer>
+                <feComposite in2="SourceGraphic" operator="in" />
+            </filter>
+        </defs>
+    </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false"
+        role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+        <defs>
+            <filter id="wp-duotone-midnight">
+                <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
+                    values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+                <feComponentTransfer color-interpolation-filters="sRGB">
+                    <feFuncR type="table" tableValues="0 0" />
+                    <feFuncG type="table" tableValues="0 0.64705882352941" />
+                    <feFuncB type="table" tableValues="0 1" />
+                    <feFuncA type="table" tableValues="1 1" />
+                </feComponentTransfer>
+                <feComposite in2="SourceGraphic" operator="in" />
+            </filter>
+        </defs>
+    </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false"
+        role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+        <defs>
+            <filter id="wp-duotone-magenta-yellow">
+                <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
+                    values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+                <feComponentTransfer color-interpolation-filters="sRGB">
+                    <feFuncR type="table" tableValues="0.78039215686275 1" />
+                    <feFuncG type="table" tableValues="0 0.94901960784314" />
+                    <feFuncB type="table" tableValues="0.35294117647059 0.47058823529412" />
+                    <feFuncA type="table" tableValues="1 1" />
+                </feComponentTransfer>
+                <feComposite in2="SourceGraphic" operator="in" />
+            </filter>
+        </defs>
+    </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false"
+        role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+        <defs>
+            <filter id="wp-duotone-purple-green">
+                <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
+                    values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+                <feComponentTransfer color-interpolation-filters="sRGB">
+                    <feFuncR type="table" tableValues="0.65098039215686 0.40392156862745" />
+                    <feFuncG type="table" tableValues="0 1" />
+                    <feFuncB type="table" tableValues="0.44705882352941 0.4" />
+                    <feFuncA type="table" tableValues="1 1" />
+                </feComponentTransfer>
+                <feComposite in2="SourceGraphic" operator="in" />
+            </filter>
+        </defs>
+    </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false"
+        role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+        <defs>
+            <filter id="wp-duotone-blue-orange">
+                <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
+                    values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+                <feComponentTransfer color-interpolation-filters="sRGB">
+                    <feFuncR type="table" tableValues="0.098039215686275 1" />
+                    <feFuncG type="table" tableValues="0 0.66274509803922" />
+                    <feFuncB type="table" tableValues="0.84705882352941 0.41960784313725" />
+                    <feFuncA type="table" tableValues="1 1" />
+                </feComponentTransfer>
+                <feComposite in2="SourceGraphic" operator="in" />
+            </filter>
+        </defs>
+    </svg><a class="screen-reader-text skip-link" href="#content" title="Langsung ke isi">Langsung ke isi</a>
+    <nav class="main-navigation nav-align-center has-menu-bar-items sub-menu-right" id="site-navigation"
+        aria-label="Utama" itemtype="https://schema.org/SiteNavigationElement" itemscope>
+        <div class="inside-navigation grid-container">
+            <form method="get" class="search-form navigation-search" action="/">
+                <input type="search" class="search-field" value="" name="q" title="Cari" />
+            </form> <button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false">
+                <span class="gp-icon icon-menu-bars"><svg viewBox="0 0 512 512" aria-hidden="true"
+                        xmlns="http://www.w3.org/2000/svg" width="1em" height="1em">
+                        <path
+                            d="M0 96c0-13.255 10.745-24 24-24h464c13.255 0 24 10.745 24 24s-10.745 24-24 24H24c-13.255 0-24-10.745-24-24zm0 160c0-13.255 10.745-24 24-24h464c13.255 0 24 10.745 24 24s-10.745 24-24 24H24c-13.255 0-24-10.745-24-24zm0 160c0-13.255 10.745-24 24-24h464c13.255 0 24 10.745 24 24s-10.745 24-24 24H24c-13.255 0-24-10.745-24-24z" />
+                    </svg><svg viewBox="0 0 512 512" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                        width="1em" height="1em">
+                        <path
+                            d="M71.029 71.029c9.373-9.372 24.569-9.372 33.942 0L256 222.059l151.029-151.03c9.373-9.372 24.569-9.372 33.942 0 9.372 9.373 9.372 24.569 0 33.942L289.941 256l151.03 151.029c9.372 9.373 9.372 24.569 0 33.942-9.373 9.372-24.569 9.372-33.942 0L256 289.941l-151.029 151.03c-9.373 9.372-24.569 9.372-33.942 0-9.372-9.373-9.372-24.569 0-33.942L222.059 256 71.029 104.971c-9.372-9.373-9.372-24.569 0-33.942z" />
+                    </svg></span><span class="mobile-menu">Menu</span> </button>
+            <div id="primary-menu" class="main-nav">
+                <ul id="menu-soal-belajar" class=" menu sf-menu">
+                    <li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-1"><a
+                            href="https://phthinksmart.github.io">Home</a></li>
+                </ul>
+                </ul>
+            </div>
+            <div class="menu-bar-items"><span class="menu-bar-item search-item"><a aria-label="Buka Kolom Pencarian"
+                        href="#"><span class="gp-icon icon-search"><svg viewBox="0 0 512 512"
+                                aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em">
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M208 48c-88.366 0-160 71.634-160 160s71.634 160 160 160 160-71.634 160-160S296.366 48 208 48zM0 208C0 93.125 93.125 0 208 0s208 93.125 208 208c0 48.741-16.765 93.566-44.843 129.024l133.826 134.018c9.366 9.379 9.355 24.575-.025 33.941-9.379 9.366-24.575 9.355-33.941-.025L337.238 370.987C301.747 399.167 256.839 416 208 416 93.125 416 0 322.875 0 208z" />
+                            </svg><svg viewBox="0 0 512 512" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                                width="1em" height="1em">
+                                <path
+                                    d="M71.029 71.029c9.373-9.372 24.569-9.372 33.942 0L256 222.059l151.029-151.03c9.373-9.372 24.569-9.372 33.942 0 9.372 9.373 9.372 24.569 0 33.942L289.941 256l151.03 151.029c9.372 9.373 9.372 24.569 0 33.942-9.373 9.372-24.569 9.372-33.942 0L256 289.941l-151.029 151.03c-9.373 9.372-24.569 9.372-33.942 0-9.372-9.373-9.372-24.569 0-33.942L222.059 256 71.029 104.971c-9.372-9.373-9.372-24.569 0-33.942z" />
+                            </svg></span></a></span></div>
+        </div>
+    </nav>
+    <header class="site-header grid-container" id="masthead" aria-label="Situs"
+        itemtype="https://schema.org/WPHeader" itemscope>
+        <div class="inside-header grid-container">
+            <h1 class="site-logo">
+                <a href="https://phthinksmart.github.io" rel="home"> QnA</a>
+            </h1>
+        </div>
+    </header>
+
+    <div class="site grid-container container hfeed" id="page">
+        <div class="site-content" id="content">
+            <div class="content-area" id="primary">
+                    <main class="site-main" id="main">
+        <article id="post-1327" class="post-1327 post type-post status-publish format-standard hentry category-info"
+            itemtype="https://schema.org/CreativeWork" itemscope="">
+            <div class="inside-article">
+                <header class="entry-header" aria-label="Konten">
+                    <h1 class="entry-title" itemprop="headline">If Arraylist Contains Java</h1>
+                    <div class="entry-meta">
+                       <span
+                            class="byline">oleh <span class="author vcard" itemprop="author"
+                                itemtype="https://schema.org/Person" itemscope=""><span class="author-name"
+                                    itemprop="name">zaskiar463</span></span></span>
+                    </div>
+                </header>
+                <div class="entry-content" itemprop="text">
+                    <div style="text-align: center">
+                        <img src="https://tse1.mm.bing.net/th?q=If+Arraylist+Contains+Java" alt="If Arraylist Contains Java">
+                    </div>
+                    <p></p>
+                    <p>1 Codingan yang benar untuk membuat ArrayList dengan tipe data string dengan nama variabel &quot;kata&quot; adalah... O A. ArrayList kata = new ArrayList0; OB. ArrayList String = new ArrayList(); O c. ArrayList kata = new ArrayList(); Od. ArrayList kata = new ArrayList(kata);​</p>
+                    <div id="ez-toc-container"
+                        class="ez-toc-v2_0_40 counter-hierarchy ez-toc-counter ez-toc-light-blue ez-toc-container-direction">
+                        <div class="ez-toc-title-container">
+                            <p class="ez-toc-title">Daftar Isi</p>
+                            <span class="ez-toc-title-toggle"><a href="#"
+                                    class="ez-toc-pull-right ez-toc-btn ez-toc-btn-xs ez-toc-btn-default ez-toc-toggle"
+                                    area-label="ez-toc-toggle-icon-1"><label for="item-63b392361c4a0"
+                                        aria-label="Table of Content"><span
+                                            style="display: flex;align-items: center;width: 35px;height: 30px;justify-content: center;direction:ltr;"><svg
+                                                style="fill: #999;color:#999" xmlns="http://www.w3.org/2000/svg"
+                                                class="list-377408" width="20px" height="20px" viewBox="0 0 24 24"
+                                                fill="none">
+                                                <path
+                                                    d="M6 6H4v2h2V6zm14 0H8v2h12V6zM4 11h2v2H4v-2zm16 0H8v2h12v-2zM4 16h2v2H4v-2zm16 0H8v2h12v-2z"
+                                                    fill="currentColor"></path>
+                                            </svg><svg style="fill: #999;color:#999" class="arrow-unsorted-368013"
+                                                xmlns="http://www.w3.org/2000/svg" width="10px" height="10px"
+                                                viewBox="0 0 24 24" version="1.2" baseProfile="tiny">
+                                                <path
+                                                    d="M18.2 9.3l-6.2-6.3-6.2 6.3c-.2.2-.3.4-.3.7s.1.5.3.7c.2.2.4.3.7.3h11c.3 0 .5-.1.7-.3.2-.2.3-.5.3-.7s-.1-.5-.3-.7zM5.8 14.7l6.2 6.3 6.2-6.3c.2-.2.3-.5.3-.7s-.1-.5-.3-.7c-.2-.2-.4-.3-.7-.3h-11c-.3 0-.5.1-.7.3-.2.2-.3.5-.3.7s.1.5.3.7z">
+                                                </path>
+                                            </svg></span></label><input type="checkbox" id="item-63b392361c4a0"></a></span>
+                        </div>
+                        <nav>
+                            <ul class="ez-toc-list ez-toc-list-level-1 ">
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#1-codingan-yang-benar-untuk-membuat-arraylist-dengan-tipe-data-string-dengan-nama-variabel-kata-adalah-o-a-arraylist-kata-new-arraylist0-ob-arraylist-string-new-arraylist-o-c-arraylist">1.
+                                            1 Codingan yang benar untuk membuat ArrayList dengan tipe data string dengan nama variabel "kata" adalah... O A. ArrayList kata = new ArrayList0; OB. ArrayList String = new ArrayList(); O c. ArrayList kata = new ArrayList(); Od. ArrayList kata = new ArrayList(kata);​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#java-tuliskan-semua-constructor-dan-method-method-serta-berikan-penjelasan-tentang-kegunaan-dan-penggunaan-method-method-yang-ada-di-class-vector-arraylist-hashset-dan-hashmap%e2%80%8b">2.
+                                            (java) Tuliskan semua constructor dan method-method serta berikan penjelasan tentang kegunaan dan penggunaan method-method yang ada di class vector, ArrayList, HashSet dan HashMap​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#java-buatlah-program-menggunakan-arraylist-yang-hanya-dapat-menyimpan-data-bertipe-string-data-akan-diinput-melalui-keyboard-program-akan-terus-menerus-meminta-input-string-sampai-kita-memasukkan">3.
+                                            (Java) Buatlah program menggunakan ArrayList yang hanya dapat menyimpan data bertipe String. Data akan diinput melalui Keyboard. Program akan terus- menerus meminta input String sampai kita memasukkan String EOF sejurus kemudian Program akan menampilkan semua data yang tersimpan di ArrayList yang tadi kita masukkan melalui keyboard/input console. String EOF tidak perlu dimasukkan ke ArrayList. String EOF hanya digunakan sebagai penanda proses input harus dihentikan dan mulai menampilkan output.​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#yang-mana-kata-keja-it-containsfcontaininggcontainshcontainment">4.
+                                            Yang mana kata keja it contains
+(F)containing
+(G)contains
+(H)Containment</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#even-if-youre-miles-away-what-figurative-language-contains-in-the-lyric%e2%80%8b">5.
+                                            "even if you're Miles Away" What figurative language contains in the lyric?​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#tuliskan-script-statement-if-menggunakan-bahasa-pemrogaman-java">6.
+                                            tuliskan script "statement if" menggunakan bahasa pemrogaman java</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#bantu-dong-else-if-java">7.
+                                            bantu dong, else if java</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#apa-perbedaan-antara-array-dan-arraylist-berikan-contoh">8.
+                                            Apa perbedaan antara array dan arraylist ? berikan contoh !</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#the-medicine-contains%e2%80%8b">9.
+                                            the medicine contains​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#milk-contains-vitamin">10.
+                                            Milk contains vitamin....</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#make-expression-of-hope-if-your-friend-will-perform-in-the-java-band-competition%e2%80%8b">11.
+                                            make expression of hope if your friend will perform in the java band competition?​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#if-you-go-to-pacitan-east-java-dalm-bahasa-indonesia">12.
+                                            if you go to pacitan east java dalm bahasa indonesia</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#a-bread-contains-%e2%80%8b">13.
+                                            A bread contains...​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#if-we-eat-so-much-food-contains-fat-we-can-trigger-a-atack%e2%80%8b">14.
+                                            if we eat so much food contains fat we can trigger a .... atack​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#the-medicine-contains%e2%80%8b">15.
+                                            the medicine contains​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#program-loop-and-if-java-pada-netbeans-untuk-menampilkan">16.
+                                            program loop and if java pada netbeans untuk menampilkan :</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#the-product-contains">17.
+                                            the product contains...</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#else-without-if-netbean-java-class-error-kira%c2%b2-apa-yang-salah">18.
+                                            "else" without "if" netbean java class, error kira² apa yang salah? </a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#a-text-is-categorized-into-exposition-text-if-it-a-contains-the-affirmation-of-the-truth-of-an-opinion-b-contains-the-adventure-of-a-character-c-contains-a-thorough-description-of-the-plac">19.
+                                            A text is categorized into exposition text if it ...a. contains the affirmation of the truth of an opinion' b. contains the adventure of a character .... c. contains a thorough description of the place and event d. contains personal experiences for the readers e. contains an imaginative story of the author find out is by​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#java-buatlah-program-menggunakan-vector-dan-arraylist-untuk-menyimpan-data-12-46-4138729-%e2%80%9cgajah%e2%80%9d-%e2%80%98j%e2%80%99-24-%e2%80%98%e2%80%99-%e2%80%9cjerapah%e2%80%9d-22-7-k">20.
+                                            (Java) Buatlah program menggunakan Vector dan ArrayList untuk menyimpan data = 12, 46.4138729, “Gajah”, ‘j’, 24, ‘#’, “Jerapah”, 22.7 .kemudian tampilkan kembali nilai elemen-elemennya ke console window​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#if-i-wanted-to-learn-sundanesei-___-go-to-west-java">21.
+                                            if i wanted to learn sundanese,i ___, (go) to west java</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#persamaan-kata-contains-adalah">22.
+                                            persamaan kata contains adalah</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#a-text-is-categorized-into-exposition-text-if-it-a-contains-the-affirmation-of-the-truth-of-an-opinion-b-contains-the-adventure-of-a-characterc-contains-a-thorough-d-contains-personal-experi">23.
+                                            A text is categorized into exposition text if it...
+a. contains the affirmation of the truth of an opinion 
+b. contains the adventure of a character
+c. contains a thorough 
+d. contains personal experiences for the readers 
+e. contains an imaginative story of the author</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#practice-1-if-i-wanted-to-learn-sundanese-i-go-to-west-java">24.
+                                            Practice 1 if I wanted to learn sundanese, I... (Go) to west Java</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#apa-pengertian-classnotfoundexception-dalam-java-apakah-fungsi-classnotfoundexception-dalam-java-apa-kelebihan-dan-kekurangan-classnotfoundexception-dalam-java-contoh-program-classnotfoundexcept">25.
+                                            apa pengertian ClassNotFoundException dalam java ?
+apakah fungsi ClassNotFoundException dalam java ?
+apa kelebihan dan kekurangan ClassNotFoundException dalam java ?
+contoh program ClassNotFoundException dalam java ?</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#contoh-inputan-java-if-majemuk-dengan-menggunakan-switch-case">26.
+                                            Contoh inputan java if majemuk dengan menggunakan switch case</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#the-package-contains%e2%80%8b">27.
+                                            The package contains​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#who-can-speak-java-if-u-can-answer-this-pls-replay%e2%80%8b">28.
+                                            Who can speak java if u can answer this pls (replay)​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#perbedaan-hashset-treeset-linkedhashset-enumset-dan-arraylist-dijawab-yang-bener-satt-ente-jangan-mau-poinnya-doank">29.
+                                            Perbedaan HashSet, TreeSet, LinkedHashSet, EnumSet dan ArrayList ?
+( dijawab yang bener SATT... ente jangan mau poinnya doank )</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#buatlah-contoh-program-java-sederhana-menggunakan-if-else%e2%80%8b">30.
+                                            Buatlah Contoh program Java sederhana menggunakan IF ELSE!​</a>
+                                    </li>
+                                                            </ul>
+                        </nav>
+                    </div>
+                                            <h2 class="ez-toc-section" id="1-codingan-yang-benar-untuk-membuat-arraylist-dengan-tipe-data-string-dengan-nama-variabel-kata-adalah-o-a-arraylist-kata-new-arraylist0-ob-arraylist-string-new-arraylist-o-c-arraylist">
+                            1. 1 Codingan yang benar untuk membuat ArrayList dengan tipe data string dengan nama variabel "kata" adalah... O A. ArrayList kata = new ArrayList0; OB. ArrayList String = new ArrayList(); O c. ArrayList kata = new ArrayList(); Od. ArrayList kata = new ArrayList(kata);​</h2><br />
+                        <p><strong>Jawaban:</strong></p><p>c. ArrayList kata = new ArrayList();</p><p><strong>Penjelasan:</strong></p><p>ArrayList kata = new ArrayList(); : pada baris ini kita mendeklarasikan bahwa arraylist yang kita buat akan menampung data bertipe String. </p><br />
+                                            <h2 class="ez-toc-section" id="java-tuliskan-semua-constructor-dan-method-method-serta-berikan-penjelasan-tentang-kegunaan-dan-penggunaan-method-method-yang-ada-di-class-vector-arraylist-hashset-dan-hashmap%e2%80%8b">
+                            2. (java) Tuliskan semua constructor dan method-method serta berikan penjelasan tentang kegunaan dan penggunaan method-method yang ada di class vector, ArrayList, HashSet dan HashMap​</h2><br />
+                        <p><strong>Jawaban:</strong></p><p><strong>Class Vector:</strong></p><p><strong></strong></p><p><strong>Constructor</strong></p><p><strong>Vector(): membuat objek Vector kosong dengan ukuran awal 10.</strong></p><p><strong>Vector(int initialCapacity): membuat objek Vector kosong dengan ukuran awal sesuai parameter.</strong></p><p><strong>Vector(int initialCapacity, int capacityIncrement): membuat objek Vector kosong dengan ukuran awal sesuai parameter dan increment sesuai parameter.</strong></p><p><strong>Vector(Collection&lt;? extends E&gt; c): membuat objek Vector dengan isi elemen sesuai parameter.</strong></p><p><strong>Method</strong></p><p><strong>add(E e): menambahkan elemen di bagian akhir vector.</strong></p><p><strong>add(int index, E element): menambahkan elemen pada index tertentu.</strong></p><p><strong>remove(int index): menghapus elemen pada index tertentu.</strong></p><p><strong>remove(Object o): menghapus elemen tertentu.</strong></p><p><strong>clear(): menghapus semua elemen pada vector.</strong></p><p><strong>size(): mengembalikan ukuran vector.</strong></p><p><strong>isEmpty(): mengecek apakah vector kosong.</strong></p><p><strong>contains(Object o): mengecek apakah vector mengandung elemen tertentu.</strong></p><p><strong>get(int index): mengembalikan elemen pada index tertentu.</strong></p><p><strong>set(int index, E element): mengubah elemen pada index tertentu.</strong></p><p><strong>Class ArrayList:</strong></p><p><strong></strong></p><p><strong>Constructor</strong></p><p><strong>ArrayList(): membuat objek ArrayList kosong dengan ukuran awal 10.</strong></p><p><strong>ArrayList(int initialCapacity): membuat objek ArrayList kosong dengan ukuran awal sesuai parameter.</strong></p><p><strong>ArrayList(Collection&lt;? extends E&gt; c): membuat objek ArrayList dengan isi elemen sesuai parameter.</strong></p><p><strong>Method</strong></p><p><strong>add(E e): menambahkan elemen di bagian akhir ArrayList.</strong></p><p><strong>add(int index, E element): menambahkan elemen pada index tertentu.</strong></p><p><strong>remove(int index): menghapus elemen pada index tertentu.</strong></p><p><strong>remove(Object o): menghapus elemen tertentu.</strong></p><p><strong>clear(): menghapus semua elemen pada ArrayList.</strong></p><p><strong>size(): mengembalikan ukuran ArrayList.</strong></p><p><strong>isEmpty(): mengecek apakah ArrayList kosong.</strong></p><p><strong>contains(Object o): mengecek apakah ArrayList mengandung elemen tertentu.</strong></p><p><strong>get(int index): mengembalikan elemen pada index tertentu.</strong></p><p><strong>set(int index, E element): mengubah elemen pada index tertentu.</strong></p><p><strong>Class HashSet:</strong></p><p><strong></strong></p><p><strong>Constructor</strong></p><p><strong>HashSet(): membuat objek HashSet kosong dengan ukuran awal 16.</strong></p><p><strong>HashSet(Collection&lt;? extends E&gt; c): membuat objek HashSet dengan isi elemen sesuai parameter.</strong></p><p><strong>Method</strong></p><p><strong>add(E e): menambahkan elemen ke HashSet.</strong></p><p><strong>remove(Object o): menghapus elemen tertentu dari HashSet.</strong></p><p><strong>clear(): menghapus semua elemen pada HashSet.</strong></p><p><strong>size(): mengembalikan ukuran HashSet.</strong></p><p><strong>isEmpty(): mengecek apakah HashSet kosong.</strong></p><p><strong>contains(Object o): mengecek apakah HashSet mengandung elemen tertentu.</strong></p><p><strong>Class HashMap:</strong></p><p><strong></strong></p><p><strong>Constructor</strong></p><p><strong>HashMap(): membuat objek HashMap kosong dengan ukuran awal 16.</strong></p><p><strong>HashMap(int initialCapacity): membuat objek HashMap kosong dengan ukuran awal sesuai parameter.</strong></p><p><strong>HashMap(int initialCapacity, float loadFactor): membuat objek HashMap kosong dengan ukuran awal dan load factor sesuai parameter.</strong></p><p><strong>HashMap(Map&lt;? extends K,? extends V&gt; m): membuat objek HashMap dengan isi elemen sesuai parameter.</strong></p><p><strong>Method</strong></p><p><strong>put(K key, V value): menambahkan entry ke HashMap.</strong></p><p><strong>remove(Object key): menghapus entry tertentu dari HashMap.</strong></p><p><strong>clear(): menghapus semua entry pada HashMap.</strong></p><p><strong>size(): mengembalikan ukuran HashMap.</strong></p><p></p><br />
+                                            <h2 class="ez-toc-section" id="java-buatlah-program-menggunakan-arraylist-yang-hanya-dapat-menyimpan-data-bertipe-string-data-akan-diinput-melalui-keyboard-program-akan-terus-menerus-meminta-input-string-sampai-kita-memasukkan">
+                            3. (Java) Buatlah program menggunakan ArrayList yang hanya dapat menyimpan data bertipe String. Data akan diinput melalui Keyboard. Program akan terus- menerus meminta input String sampai kita memasukkan String EOF sejurus kemudian Program akan menampilkan semua data yang tersimpan di ArrayList yang tadi kita masukkan melalui keyboard/input console. String EOF tidak perlu dimasukkan ke ArrayList. String EOF hanya digunakan sebagai penanda proses input harus dihentikan dan mulai menampilkan output.​</h2><br />
+                        <p><strong>Jawaban:</strong></p><p>Berikut ini adalah contoh program menggunakan ArrayList di Java yang meminta input String dari keyboard dan menampilkan data yang tersimpan di ArrayList setelah memasukkan String EOF:</p><p>import java.util.ArrayList;</p><p>import java.util.Scanner;</p><p></p><p>public class StringArrayList {</p><p>    public static void main(String[] args) {</p><p>        ArrayList&lt;String&gt; data = new ArrayList&lt;&gt;();</p><p>        Scanner input = new Scanner(System.in);</p><p></p><p>        // meminta input string dari keyboard sampai EOF</p><p>        while (true) {</p><p>            System.out.print("Masukkan string (EOF untuk berhenti): ");</p><p>            String stringInput = input.nextLine();</p><p></p><p>            // mengecek apakah input adalah EOF</p><p>            if (stringInput.equals("EOF")) {</p><p>                break;</p><p>            }</p><p></p><p>            // menambahkan input ke dalam ArrayList</p><p>            data.add(stringInput);</p><p>        }</p><p></p><p>        // menampilkan semua data yang tersimpan di ArrayList</p><p>        System.out.println("Data yang tersimpan di ArrayList:");</p><p>        for (String str : data) {</p><p>            System.out.println(str);</p><p>        }</p><p>    }</p><p>}</p><p><strong>Penjelasan:</strong></p><p>1. Pertama-tama, kita mengimpor ArrayList dan Scanner dari package java.util.</p><p>2. Kemudian, kita mendefinisikan sebuah ArrayList&lt;String&gt; yang bernama data untuk menyimpan input dari keyboard.</p><p>3. Selanjutnya, kita membuat objek Scanner untuk membaca input dari keyboard.</p><p>4. Di dalam loop while, program akan terus meminta input string dari keyboard sampai kita memasukkan String EOF.</p><p>5. Setiap input string akan ditambahkan ke dalam ArrayList menggunakan method add().</p><p>6. Setelah selesai memasukkan data, program akan menampilkan semua data yang tersimpan di ArrayList menggunakan loop for-each.</p><p>7. Jangan lupa untuk menutup objek Scanner setelah selesai digunakan menggunakan method close().</p><br />
+                                            <h2 class="ez-toc-section" id="yang-mana-kata-keja-it-containsfcontaininggcontainshcontainment">
+                            4. Yang mana kata keja it contains
+(F)containing
+(G)contains
+(H)Containment</h2><br />
+                        <p><strong>Jawaban:</strong></p><p>containing</p><p></p><p>semoga membantu maaf jika salah</p><br />
+                                            <h2 class="ez-toc-section" id="even-if-youre-miles-away-what-figurative-language-contains-in-the-lyric%e2%80%8b">
+                            5. "even if you're Miles Away" What figurative language contains in the lyric?​</h2><br />
+                        <p><strong>Jawaban:</strong></p><p>"even if you're miles away"</p><p>itu judul lagu? ata apa?</p><br />
+                                            <h2 class="ez-toc-section" id="tuliskan-script-statement-if-menggunakan-bahasa-pemrogaman-java">
+                            6. tuliskan script "statement if" menggunakan bahasa pemrogaman java</h2><br />
+                        <p>class IfStatement {</p><p>    public static void main(String[] args) {</p><br /><p>    	int number = 10;</p><br /><p>    	if (number &gt; 0) {</p><p>      System.out.println("Number is positive.");</p><p>    	}</p><p>    	System.out.println("This statement is always executed.");</p><p>    }</p><p>}</p><br />
+                                            <h2 class="ez-toc-section" id="bantu-dong-else-if-java">
+                            7. bantu dong, else if java</h2><br />
+                        <p><strong>Halo</strong>, saya sudah buat kodenya + penjelasannya melalui komentar di samping kodenya ya. </p><p></p><p>Sebagai berikut sudah saya simpan di: https://haste.zann.my.id/sapucewoja.java</p><p></p><p>Untuk user input saya pakai util scanner, dan untuk menghasilkan angka angkanya menggunakan perulangan serta beberapa kondisi. Udah itu aja.</p><p></p><p>Semoga membantu.</p><br />
+                                            <h2 class="ez-toc-section" id="apa-perbedaan-antara-array-dan-arraylist-berikan-contoh">
+                            8. Apa perbedaan antara array dan arraylist ? berikan contoh !</h2><br />
+                        <p>Array dan arraylist memiliki perbedaan yaitu sebagai berikut:</p><p><strong>Array </strong>merupakan struktur data menggunakan panjang tetap. Ini membantu buat menyimpan elemen data yg termasuk tipe data yg sama. Terkadang, diharapkan buat mempunyai poly elemen berdasarkan tipe data yg sama. Misalnya, asumsikan sebuah acara buat menyimpan nilai siswa. Tidak mungkin menciptakan variabel buat masing-masing. Array merupakan cara lain  buat kasus ini. Menggunakan array, programmer bisa menyimpan poly elemen data menggunakan tipe yg sama menjadi satu unit.</p><p><strong>ArrayList</strong> adalah kelas Koleksi panjang variabel. Kelas ini memungkinkan pemrogram untuk membuat struktur data ArrayList. Kelas ArrayList juga mengimplementasikan antarmuka Daftar. Array memiliki panjang tetap dan tidak dapat berisi lebih banyak elemen dari ukuran array yang ditentukan. Namun, daftar array bersifat dinamis. Artinya, programmer dapat menambah atau menghapus item sesuai kebutuhan. Saat menggunakan ArrayList, pemrogram dapat menggunakan metode yang telah ditentukan sebelumnya seperti menambah dan menghapus. Selain itu, Anda dapat menyertakan elemen duplikat dan menjaga urutan data yang dimasukkan.</p><p></p><p><strong>Pembahasan:</strong></p><p><strong>Array: </strong>Array adalah struktur data yang terdiri dari kumpulan elemen, setiap elemen  diidentifikasi oleh indeks array. </p><p><strong>ArrayList: </strong>ArrayList adalah kelas yang mendukung array dinamis yang dapat diperluas sesuai kebutuhan.</p><p></p><p>Contoh:</p><p><strong>Array </strong></p><p>public class ArrayDemo</p><p>{</p><p>    public static void main(String args[]){</p><p>        int nilai [] = new int[5];</p><p>        String nama [] = new String[5];</p><p>        nilai[0] = 10;</p><p>        nilai[4] = 15;</p><p>        nilai[2] = 200;</p><p>        nama[1] = "Ahmad";</p><p>        nama[0] = "Andri";</p><p>        nama[3] = "Anis";</p><p>        System.out.println("Isi dari nilai[0] adalah: "+nilai[0]);</p><p>        int jumlah = nilai[4] + nilai[2];</p><p>        System.out.println("Jumlahnya adalah: "+jumlah);</p><p>        System.out.println("Nama pertama adalah: "+nama[0]);</p><p>        System.out.println("Nama keempat adalah: "+nama[3]);</p><p>        System.out.println("Nama kedua adalah: "+nama[1]);</p><p>    }</p><p>}</p><p></p><p><strong>Arraylist</strong></p><p>import java.util.ArrayList;</p><p>public class ArrayListDemo</p><p>{</p><p>    public static void main(String [] args){</p><p>        ArrayList nilai = new ArrayList();</p><p>        ArrayList nama = new ArrayList();</p><p>        nilai.add(5);</p><p>        nilai.add(20);</p><p>        nilai.add(14);</p><p>        nilai.add(90);</p><p>        nama.add("Kamto");</p><p>        nama.add("Sri");</p><p>        nama.add("Narto");</p><p>        nama.add("Siti");</p><p>        nama.add("Andarini");</p><p>        nama.add("Sukma");</p><p>        int jumlah = nilai.get(0)+nilai.get(2);</p><p>        System.out.println("Nilai ke 1 ditambah nilai ke 3 = "+jumlah);</p><p>        System.out.println("Nama ke 3 adalah "+nama.get(2));</p><p>        System.out.println("Nama ke 5 adalah "+nama.get(4));</p><p>        System.out.println("Jumlah nama yang dimasukkan adalah "+nama.size());</p><p>        System.out.println("Semua nama yang dimasukkan adalah:");</p><p>        for(int i = 0; i &amp;lt; nama.size(); i++){</p><p>            System.out.println("Nama ke "+(i+1)+" adalah "+nama.get(i));</p><p>        }</p><p>    }</p><p>}</p><p></p><p><strong>Pelajari Lebih Lanjut :</strong></p><p>Pelajari lebih lanjut mengenai array dan arraylist https://brainly.co.id/tugas/50029329</p><p></p><p><strong>#BelajarBersamaBrainly#SPJ4</strong></p><br />
+                                            <h2 class="ez-toc-section" id="the-medicine-contains%e2%80%8b">
+                            9. the medicine contains​</h2><br />
+                        <p><strong>Jawaban:</strong></p><p>The medicine container berarti obatnya mengandung</p><p><strong>Jawaban:</strong></p><p>the medicine containts artinya obat yang dikandungnya</p><p><strong>Penjelasan:</strong></p><p>the medicine artinya yang dikandung atau yang terdapat dalam</p><p>dan containts itu artinya obat</p><br />
+                                            <h2 class="ez-toc-section" id="milk-contains-vitamin">
+                            10. Milk contains vitamin....</h2><br />
+                        <p>Susu mengandung vitamin A </p><p></p><p></p><p></p><p>Penjelasan: </p><p></p><p>Moga membantu y ka, maaf klo slah y ka..(๑˃̵　ᴗ　˂̵)و</p><br />
+                                            <h2 class="ez-toc-section" id="make-expression-of-hope-if-your-friend-will-perform-in-the-java-band-competition%e2%80%8b">
+                            11. make expression of hope if your friend will perform in the java band competition?​</h2><br />
+                        <p></p><p><strong>Jawaban:</strong></p><p>I hope you succeed in this competition!</p><p></p><br />
+                                            <h2 class="ez-toc-section" id="if-you-go-to-pacitan-east-java-dalm-bahasa-indonesia">
+                            12. if you go to pacitan east java dalm bahasa indonesia</h2><br />
+                        <p>Jawaban:jika kau pergi ke pacitan jawa timur</p><p></p><p>Penjelasan:</p><p></p><br />
+                                            <h2 class="ez-toc-section" id="a-bread-contains-%e2%80%8b">
+                            13. A bread contains...​</h2><br />
+                        <p>Jawaban: carbohydrate</p><p></p><p>Penjelasan: Maaf klo salah</p><p></p><br />
+                                            <h2 class="ez-toc-section" id="if-we-eat-so-much-food-contains-fat-we-can-trigger-a-atack%e2%80%8b">
+                            14. if we eat so much food contains fat we can trigger a .... atack​</h2><br />
+                        <p><strong>Jawaban:</strong></p><p>heart attack kayaknya. semoga membantu </p><p></p><p><strong>Jawaban:</strong></p><p>Obesity</p><p><strong>Penjelasan:</strong></p><p>if we eat so much food contains fat we can trigger a .... atack​  to indonesian</p><p> jika kita makan begitu banyak makanan mengandung lemak kita dapat memicu .... atack (di dekat Atack)</p><p>makanan berlamak dapat menyebabkan penumpukan lemak sehingga dabat menyebabkan obesitas</p><br />
+                                            <h2 class="ez-toc-section" id="the-medicine-contains%e2%80%8b">
+                            15. the medicine contains​</h2><br />
+                        <p><strong>Jawaban:</strong></p><p>obatnya mengandung?</p><p>itu terjemahannya</p><p></p><p></p><p><strong>Jawaban:</strong></p><p>obatnya mengandung</p><p>maaf kalau salah</p><br />
+                                            <h2 class="ez-toc-section" id="program-loop-and-if-java-pada-netbeans-untuk-menampilkan">
+                            16. program loop and if java pada netbeans untuk menampilkan :</h2><br />
+                        Untuk program tersebut kita dapat menggunakan arr2d dalam java.<br />        int[][] data= new int [][]{<br />            {0,4,9,16,25,36,49,64,81,100},<br />            {4,0,16,25,36,49,64,81,100,1},<br />            {9,16,0,36,49,64,81,100,1,1},<br />            {16,25,36,0,64,81,100,1,1,1},<br />            {25,36,49,64,0,100,1,1,1,1},<br />            {36,49,64,81,100,0,1,1,1,1},<br />            {49,64,81,100,1,1,1,1,1,1},<br />            {64,81,100,1,1,1,1,1,1,1},<br />            {81,100,1,1,1,1,1,1,1,1},<br />            {10,1,1,1,1,1,1,1,1,1}<br />        };<br />        for (int i=0; i&lt;10; i++)<br />        {<br />            for (int j=0; j&lt;10; j++)<br />            {<br />                System.out.print(data[i][j]);<br />                System.out.print("\t");<br />            }<br />            System.out.println();<br />        }<br />        <br />    }<br />Note: Jawaban Terbaik yah!<br /><br />
+                                            <h2 class="ez-toc-section" id="the-product-contains">
+                            17. the product contains...</h2><br />
+                        <p><strong>Jawaban:</strong></p><p>nutrition facts</p><p></p><p>maaf kalo salah</p><p></p><br />
+                                            <h2 class="ez-toc-section" id="else-without-if-netbean-java-class-error-kira%c2%b2-apa-yang-salah">
+                            18. "else" without "if" netbean java class, error kira² apa yang salah? </h2><br />
+                        Itu kata if nya dihilangkan aja<br />
+                                            <h2 class="ez-toc-section" id="a-text-is-categorized-into-exposition-text-if-it-a-contains-the-affirmation-of-the-truth-of-an-opinion-b-contains-the-adventure-of-a-character-c-contains-a-thorough-description-of-the-plac">
+                            19. A text is categorized into exposition text if it ...a. contains the affirmation of the truth of an opinion' b. contains the adventure of a character .... c. contains a thorough description of the place and event d. contains personal experiences for the readers e. contains an imaginative story of the author find out is by​</h2><br />
+                        <p>A text is categorized into <strong>exposition </strong>text if it contains the <strong>affirmation </strong>of the truth of an opinion (A). </p><p>Artinya sebuah teks dikategorikan ke dalam teks eksposisi bila mengandung <strong>penguatan </strong>terhadap opini penulis. </p><p></p>Pembahasan<p>Di dalam soal di atas sebuah <strong>exposition text</strong> adalah teks yang mengandung <strong>penguatan </strong>terhadap <strong>opini </strong>penulis, jadi jawaban yang benar adalah A. Pilihan lainnya tidak tepat karena:</p><p>b. Contains the adventure of a character, kalimat ini menjelaskan pengertian narrative text. </p><p>c. contains a thorough description of the place and event, kalimat ini menjelaskan tentang descriptive text. </p><p>d. Contains personal experiences for the readers, kalimat ini menjelaskan recount text. </p><p>e. Contains an imaginative story of the author find out, kalimat ini menjelaskan tentang narrative text. </p><p></p>Pelajari lebih lanjut Materi tentang definisi analytical exposition https://brainly.co.id/tugas/10703838<p><strong>#BelajarBersamaBrainly #SPJ1</strong></p><br />
+                                            <h2 class="ez-toc-section" id="java-buatlah-program-menggunakan-vector-dan-arraylist-untuk-menyimpan-data-12-46-4138729-%e2%80%9cgajah%e2%80%9d-%e2%80%98j%e2%80%99-24-%e2%80%98%e2%80%99-%e2%80%9cjerapah%e2%80%9d-22-7-k">
+                            20. (Java) Buatlah program menggunakan Vector dan ArrayList untuk menyimpan data = 12, 46.4138729, “Gajah”, ‘j’, 24, ‘#’, “Jerapah”, 22.7 .kemudian tampilkan kembali nilai elemen-elemennya ke console window​</h2><br />
+                        <p><strong>Jawaban:</strong></p><p>Berikut adalah contoh program Java yang menggunakan Vector dan ArrayList untuk menyimpan data dan menampilkan nilainya ke console window:</p><p><strong>Penjelasan:</strong></p><p></p><p></p><p>java:</p><p></p><p>import java.util.ArrayList;</p><p>import java.util.Vector;</p><p></p><p>public class Main {</p><p>    public static void main(String[] args) {</p><p>        Vector&lt;Object&gt; vec = new Vector&lt;Object&gt;(); // Membuat objek Vector</p><p>        ArrayList&lt;Object&gt; arrList = new ArrayList&lt;Object&gt;(); // Membuat objek ArrayList</p><p></p><p>        // Menambahkan elemen ke dalam Vector</p><p>        vec.add(12);</p><p>        vec.add(46.4138729);</p><p>        vec.add("Gajah");</p><p>        vec.add('j');</p><p>        vec.add(24);</p><p>        vec.add('#');</p><p>        vec.add("Jerapah");</p><p>        vec.add(22.7);</p><p></p><p>        // Menambahkan elemen ke dalam ArrayList</p><p>        arrList.add(12);</p><p>        arrList.add(46.4138729);</p><p>        arrList.add("Gajah");</p><p>        arrList.add('j');</p><p>        arrList.add(24);</p><p>        arrList.add('#');</p><p>        arrList.add("Jerapah");</p><p>        arrList.add(22.7);</p><p></p><p>        // Menampilkan nilai elemen-elemennya ke console window</p><p>        System.out.println("Isi Vector:");</p><p>        for (Object obj : vec) {</p><p>            System.out.println(obj);</p><p>        }</p><p></p><p>        System.out.println("\nIsi ArrayList:");</p><p>        for (Object obj : arrList) {</p><p>            System.out.println(obj);</p><p>        }</p><p>    }</p><p>}</p><p></p><p>Output:</p><p></p><p>yaml</p><p></p><p>Isi Vector:</p><p>12</p><p>46.4138729</p><p>Gajah</p><p>j</p><p>24</p><p>#</p><p>Jerapah</p><p>22.7</p><p></p><p>Isi ArrayList:</p><p>12</p><p>46.4138729</p><p>Gajah</p><p>j</p><p>24</p><p>#</p><p>Jerapah</p><p>22.7</p><p></p><p></p><p></p><p></p><p>Array, Vector, dan ArrayList semuanya adalah kumpulan elemen data yang disimpan di memori secara teratur dengan akses langsung ke setiap elemen data. Namun, terdapat perbedaan dalam penggunaan dan fungsionalitas dari ketiga struktur tersebut.</p><p></p><p>Array adalah struktur data dasar yang terdiri dari kumpulan elemen data yang tipe datanya sama dan ditempatkan di memori secara teratur dengan indeks integer yang unik untuk setiap elemen. Ukuran array harus ditentukan pada saat deklarasi dan tidak dapat berubah selama program dijalankan.</p><p></p><p>Vector dan ArrayList pada dasarnya sama, yakni kumpulan elemen data yang dinamis, tetapi mereka memiliki beberapa perbedaan. Vector adalah kelas yang ada di Java sejak versi awal dan digunakan untuk memfasilitasi operasi data yang dinamis seperti penambahan atau pengurangan elemen pada kumpulan data. Sementara itu, ArrayList adalah kelas yang diperkenalkan pada versi Java 1.2 yang lebih baru, dan merupakan implementasi dari antarmuka List. Keduanya memungkinkan pengguna untuk menambahkan atau menghapus elemen dari kumpulan data selama program dijalankan, namun ada perbedaan kunci dalam penggunaannya:</p><p></p><p>Vector umumnya lebih lambat dan kurang efisien karena sifat thread-safe-nya. Artinya, setiap operasi pada Vector membutuhkan sinkronisasi yang memperlambat kinerja. Di sisi lain, ArrayList lebih cepat dan lebih efisien karena tidak thread-safe, sehingga tidak membutuhkan sinkronisasi.</p><p></p><p>Ukuran Vector dapat diatur ulang selama program berjalan, sedangkan ukuran ArrayList tetap konstan setelah diinisialisasi.</p><p></p><p>Vector menggunakan metode klasik seperti add(), remove(), dan get(), sedangkan ArrayList memiliki lebih banyak metode yang disediakan seperti addAll(), removeAll(), retainAll(), dan sebagainya.</p><p></p><p>Vector dapat digunakan pada aplikasi yang membutuhkan thread-safe, sedangkan ArrayList dapat digunakan pada aplikasi yang membutuhkan kinerja yang lebih cepat.</p><p></p><p>Perlu diperhatikan bahwa meskipun ArrayList lebih efisien daripada Vector, jika thread-safety sangat penting dalam aplikasi Anda, Vector dapat menjadi pilihan yang lebih baik.</p><p></p><p>Dalam kesimpulannya, kesamaan dari ketiga struktur tersebut adalah kumpulan elemen data yang teratur di memori dengan akses langsung ke setiap elemen. Namun, perbedaannya terletak pada kemampuan untuk menambah atau menghapus elemen saat program berjalan, ukuran yang dapat diatur ulang atau tidak, serta fungsionalitas masing-masing struktur.</p><br />
+                                            <h2 class="ez-toc-section" id="if-i-wanted-to-learn-sundanesei-___-go-to-west-java">
+                            21. if i wanted to learn sundanese,i ___, (go) to west java</h2><br />
+                        must,................................i would go to west java.<br />(conditional type 2)<br />
+                                            <h2 class="ez-toc-section" id="persamaan-kata-contains-adalah">
+                            22. persamaan kata contains adalah</h2><br />
+                        contains synonimnya adalah include<br />
+                                            <h2 class="ez-toc-section" id="a-text-is-categorized-into-exposition-text-if-it-a-contains-the-affirmation-of-the-truth-of-an-opinion-b-contains-the-adventure-of-a-characterc-contains-a-thorough-d-contains-personal-experi">
+                            23. A text is categorized into exposition text if it...
+a. contains the affirmation of the truth of an opinion 
+b. contains the adventure of a character
+c. contains a thorough 
+d. contains personal experiences for the readers 
+e. contains an imaginative story of the author</h2><br />
+                        <p><strong>Jawaban:</strong></p><p></p><p><strong>Penjelasan:</strong></p><p>The correct answer is: c. contains a thorough explanation or discussion of a topic.</p><p></p><p>Exposition text is a type of text that provides information, explains, or discusses a particular topic in a systematic and organized manner. It presents facts, ideas, or arguments in a logical and coherent way, often with the purpose of conveying knowledge or informing the readers about a specific subject matter. It does not necessarily contain personal experiences, affirmation of opinions, adventures of characters, or imaginative stories, but rather focuses on providing a thorough and detailed explanation of a topic.</p><br />
+                                            <h2 class="ez-toc-section" id="practice-1-if-i-wanted-to-learn-sundanese-i-go-to-west-java">
+                            24. Practice 1 if I wanted to learn sundanese, I... (Go) to west Java</h2><br />
+                        jawabannya adalah wentI went to west java. maaf klo salah ya<br />
+                                            <h2 class="ez-toc-section" id="apa-pengertian-classnotfoundexception-dalam-java-apakah-fungsi-classnotfoundexception-dalam-java-apa-kelebihan-dan-kekurangan-classnotfoundexception-dalam-java-contoh-program-classnotfoundexcept">
+                            25. apa pengertian ClassNotFoundException dalam java ?
+apakah fungsi ClassNotFoundException dalam java ?
+apa kelebihan dan kekurangan ClassNotFoundException dalam java ?
+contoh program ClassNotFoundException dalam java ?</h2><br />
+                        1. ClassNotFoundException akan dilancarkan manakala terjadi pemanggilan instansi Class tertentu yang belum terdaftar atau ter-referensi.<br />2. Pertanyaan ini kok aneh ya -_-<br />Kelebihan: Dalam proses debugging, ini akan mencegah force termination program akibat kesalahan tadi.<br />Kekurangan: Tidak secara spesifik menampilkan class apa yang sedang bermasalah.<br />3. Misal: mAth.abs(-1);<br />
+                                            <h2 class="ez-toc-section" id="contoh-inputan-java-if-majemuk-dengan-menggunakan-switch-case">
+                            26. Contoh inputan java if majemuk dengan menggunakan switch case</h2><br />
+                        <p>untuk membuat program percabangan di java dengan fungsi if else cukup mudah karena sintaksnya tidak jauh berbeda dengan bahasa C++ jika anda mengetahui                                                       source code                                                                     if kondisi statement yang dieksekusi           else statement yang di eksekusi</p><p>Jawaban:</p><p>Int a = 0;</p><p>Scanner sc = new Scanner();</p><p>System.out.print("masukkan angka pilihan");</p><p>Int = sc.nextInt();</p><p>// Input 1</p><p>Switch(a)</p><p>{</p><p>case 1:</p><p>System.out.print("1");</p><p>break;</p><p>case 2:</p><p>System.out.print("2);</p><p>break;</p><p>}</p><p>Output = 1</p><p></p><p>Penjelasan:</p><p></p><p></p><br />
+                                            <h2 class="ez-toc-section" id="the-package-contains%e2%80%8b">
+                            27. The package contains​</h2><br />
+                        <p><strong>Jawaban:</strong></p><p>Tolong sertakan teks/gambarnya,trims</p><br />
+                                            <h2 class="ez-toc-section" id="who-can-speak-java-if-u-can-answer-this-pls-replay%e2%80%8b">
+                            28. Who can speak java if u can answer this pls (replay)​</h2><br />
+                        <p><strong>Jawaban:</strong></p><p>1. D</p><p>2. C</p><p>3. D</p><p>4. A</p><p>5. dokter, guru, direktur pabrik lan dosen</p><p>6. B</p><p>7. A</p><p>8. C</p><p>9. D</p><p></p><p><strong>semoga </strong><strong>membantu,</strong><strong> </strong><strong>maaf </strong><strong>klau </strong><strong>salah </strong><strong>kak(＾∇＾)</strong></p><br />
+                                            <h2 class="ez-toc-section" id="perbedaan-hashset-treeset-linkedhashset-enumset-dan-arraylist-dijawab-yang-bener-satt-ente-jangan-mau-poinnya-doank">
+                            29. Perbedaan HashSet, TreeSet, LinkedHashSet, EnumSet dan ArrayList ?
+( dijawab yang bener SATT... ente jangan mau poinnya doank )</h2><br />
+                        <p><strong>Jawaban:</strong></p><p>TreeSet, LinkedHashSet, dan HashSet di Java adalah tiga set implementasi dalam kerangka koleksi dan seperti banyak lainnya mereka juga digunakan untuk menyimpan objek. Fitur utama TreeSet adalah pengurutan, LinkedHashSet adalah urutan penyisipan dan HashSet hanyalah koleksi tujuan umum untuk menyimpan objek. HashSet diimplementasikan menggunakan HashMap di Java sementara TreeSet diimplementasikan menggunakan TreeMap. TreeSet adalah implementasi SortedSet yang memungkinkannya untuk menjaga elemen-elemen dalam urutan diurutkan yang didefinisikan oleh antarmuka Comparable atau Comparator. Sebanding digunakan untuk menyortir urutan alami dan Pembanding untuk menyortir pesanan kustom objek, yang dapat disediakan saat membuat instance TreeSet. Pokoknya sebelum melihat perbedaan antara TreeSet, LinkedHashSet dan HashSet, mari kita lihat beberapa kesamaan di antara mereka:</p><p></p><p>1) Duplikat: Ketiga alat Set interface berarti mereka tidak diizinkan untuk menyimpan duplikat.</p><p></p><p>2) Keamanan thread: HashSet, TreeSet dan LinkedHashSet tidak aman untuk thread, jika Anda menggunakannya di lingkungan multi-threading di mana setidaknya satu Thread diubah. Set Anda perlu menyinkronkannya secara eksternal.</p><p></p><p>3) Fail-Fast Iterator: Iterator dikembalikan oleh TreeSet, LinkedHashSet dan HashSet adalah Iterator yang gagal-cepat. mis. Jika Iterator dimodifikasi setelah pembuatannya dengan cara apa pun selain metode Iterator hapus (), ia akan membuang ConcurrentModificationException dengan upaya terbaik. baca lebih lanjut tentang Iterator gagal-cepat vs gagal-aman di sini</p><p></p><p>Sekarang mari kita lihat perbedaan antara HashSet, LinkedHashSet dan TreeSet di Jawa:</p><p></p><p>Performa dan Kecepatan: Perbedaan pertama di antara mereka datang dalam hal kecepatan. HashSet adalah yang tercepat, LinkedHashSet adalah yang kedua dalam kinerja atau hampir mirip dengan HashSet tetapi TreeSet sedikit lebih lambat karena operasi penyortiran yang perlu dilakukan pada setiap penyisipan. TreeSet memberikan jaminan O(log(n)) waktu untuk operasi umum seperti menambah, menghapus, dan memuat, sementara HashSet dan LinkedHashSet menawarkan kinerja waktu yang konstan mis. O(1) untuk menambah, berisi dan menghapus fungsi hash yang diberikan secara merata mendistribusikan elemen dalam ember.</p><p></p><p>Pemesanan: HashSet tidak mempertahankan pesanan apa pun sementara LinkedHashSet mempertahankan urutan penyisipan elemen seperti Daftar antarmuka dan TreeSet mempertahankan urutan penyortiran atau elemen.</p><p></p><p>Implementasi Internal: HashSet didukung oleh instance HashMap, LinkedHashSet diimplementasikan menggunakan HashSet dan LinkedList sementara TreeSet didukung oleh NavigableMap di Jawa dan secara default menggunakan TreeMap.</p><p></p><p>null: Baik HashSet dan LinkedHashSet memungkinkan nol tetapi TreeSet tidak mengizinkan nol dan melempar Java.lang.NullPointerException ketika Anda akan memasukkan null ke TreeSet.</p><p><strong>Penjelasan:</strong></p><p>maaf kalau salah jawaban by fajar lazuardi</p><br />
+                                            <h2 class="ez-toc-section" id="buatlah-contoh-program-java-sederhana-menggunakan-if-else%e2%80%8b">
+                            30. Buatlah Contoh program Java sederhana menggunakan IF ELSE!​</h2><br />
+                        <p><strong>Jawaban:</strong></p><p>public class ContohProgram {</p><p>public static void main(String[] args) {</p><p>int time = 20;</p><p>if (time &lt; 18) {</p><p>System.out.println("Selamat Siang");</p><p>} else {</p><p>System.out.println("Selamat Malam");</p><p>}</p><p>}</p><p>}</p><p></p><br />
+                    
+                </div>
+                <div class="youtubeVideo" style="text-align: center">
+                    <h3>Video Terkait</h3>
+                    <iframe width="560" height="315"
+                        src="https://www.youtube.com/embed/NywLaJxm-uI?controls=0" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"allowfullscreen></iframe>
+                </div>
+                <footer class="entry-meta" aria-label="Meta postingan">
+                    <span class="cat-links"><span class="gp-icon icon-categories"><svg viewBox="0 0 512 512"
+                                aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em">
+                                <path
+                                    d="M0 112c0-26.51 21.49-48 48-48h110.014a48 48 0 0143.592 27.907l12.349 26.791A16 16 0 00228.486 128H464c26.51 0 48 21.49 48 48v224c0 26.51-21.49 48-48 48H48c-26.51 0-48-21.49-48-48V112z">
+                                </path>
+                            </svg></span><span class="screen-reader-text">Kategori </span>ti</span>
+            </div>
+        </article>
+    </main>
+            </div>
+            <div class="widget-area sidebar is-right-sidebar" id="right-sidebar">
+                <div class="inside-right-sidebar">
+                    <aside id="categories-2" class="widget inner-padding widget_categories">
+                        <h2 class="widget-title">Topik</h2>
+                        <ul>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://phthinksmart.github.io/tumpuan-dalam-lompat-jauh.html">Tumpuan Dalam Lompat Jauh</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://phthinksmart.github.io/salah-satu-ciri-khusus-kerja-prestatif-adalah.html">Salah Satu Ciri Khusus Kerja Prestatif Adalah</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://phthinksmart.github.io/hukum-mim-dan-nun-bertasydid.html">Hukum Mim Dan Nun Bertasydid</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://phthinksmart.github.io/etika-emosi-logika.html">Etika Emosi Logika</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://phthinksmart.github.io/patra-jaya-palembang.html">Patra Jaya Palembang</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://phthinksmart.github.io/jawaban-dari-masya-allah.html">Jawaban Dari Masya Allah</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://phthinksmart.github.io/jelaskan-mengapa-dalam-melaksanakan-kewajiban-harus-disertai-tanggung-jawab.html">Jelaskan Mengapa Dalam Melaksanakan Kewajiban Harus Disertai Tanggung Jawab</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://phthinksmart.github.io/gambar-topologi-jaringan.html">Gambar Topologi Jaringan</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://phthinksmart.github.io/mengapa-sebagian-besar-meteor-tidak-pernah-sampai-ke-permukaan-bumi.html">Mengapa Sebagian Besar Meteor Tidak Pernah Sampai Ke Permukaan Bumi</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://phthinksmart.github.io/tas-hitam.html">Tas Hitam</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://phthinksmart.github.io/sebutkan-syarat-terjadinya-pasar.html">Sebutkan Syarat Terjadinya Pasar</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://phthinksmart.github.io/buatlah-kliping-mengenai-jenis-jenis-usaha-yang-dikelola-perorangan.html">Buatlah Kliping Mengenai Jenis Jenis Usaha Yang Dikelola Perorangan</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://phthinksmart.github.io/gaya-bahasa-ronggeng-dukuh-paruk.html">Gaya Bahasa Ronggeng Dukuh Paruk</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://phthinksmart.github.io/volume-benda-putar.html">Volume Benda Putar</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://phthinksmart.github.io/cobalah-kau-mengerti-chord.html">Cobalah Kau Mengerti Chord</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://phthinksmart.github.io/doa-orang-meninggal-sesuai-sunnah.html">Doa Orang Meninggal Sesuai Sunnah</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://phthinksmart.github.io/pajak-motor-ninja-250.html">Pajak Motor Ninja 250</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://phthinksmart.github.io/cara-melakukan-guling-belakang.html">Cara Melakukan Guling Belakang</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://phthinksmart.github.io/penemu-plta.html">Penemu Plta</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://phthinksmart.github.io/cara-mengatasi-wastafel-mampet.html">Cara Mengatasi Wastafel Mampet</a>
+                                </li>
+                                                    </ul>
+
+                    </aside>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <div class="site-footer">
+        <footer class="site-info" aria-label="Situs" itemtype="https://schema.org/WPFooter" itemscope>
+            <div class="inside-site-info grid-container">
+                <div class="copyright-bar">
+                    <span class="copyright">&copy; 2023 <a href="https://phthinksmart.github.io"
+                            itemprop="url">QnA</a></span>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <a title="Gulirkan kembali ke puncak laman" aria-label="Gulirkan kembali ke puncak laman" rel="nofollow"
+        href="#" class="generate-back-to-top" data-scroll-speed="400" data-start-scroll="300">
+        <span class="gp-icon icon-arrow-up"><svg viewBox="0 0 330 512" aria-hidden="true"
+                xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill-rule="evenodd"
+                clip-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="1.414">
+                <path
+                    d="M305.863 314.916c0 2.266-1.133 4.815-2.832 6.514l-14.157 14.163c-1.699 1.7-3.964 2.832-6.513 2.832-2.265 0-4.813-1.133-6.512-2.832L164.572 224.276 53.295 335.593c-1.699 1.7-4.247 2.832-6.512 2.832-2.265 0-4.814-1.133-6.513-2.832L26.113 321.43c-1.699-1.7-2.831-4.248-2.831-6.514s1.132-4.816 2.831-6.515L158.06 176.408c1.699-1.7 4.247-2.833 6.512-2.833 2.265 0 4.814 1.133 6.513 2.833L303.03 308.4c1.7 1.7 2.832 4.249 2.832 6.515z"
+                    fill-rule="nonzero" />
+            </svg></span>
+    </a>
+    <script id="generate-a11y">
+        ! function() {
+            "use strict";
+            if ("querySelector" in document && "addEventListener" in window) {
+                var e = document.body;
+                e.addEventListener("mousedown", function() {
+                    e.classList.add("using-mouse")
+                }), e.addEventListener("keydown", function() {
+                    e.classList.remove("using-mouse")
+                })
+            }
+        }();
+    </script>
+    <!--[if lte IE 11]>
+<script src='https://phthinksmart.github.io/js/classList.min.js' ?ver=3.2.4' id='generate-classlist-js'></script>
+<![endif]-->
+    <script id='generate-menu-js-extra'>
+        var generatepressMenu = {
+            "toggleOpenedSubMenus": "1",
+            "openSubMenuLabel": "Buka Submenu",
+            "closeSubMenuLabel": "Tutup submenu"
+        };
+    </script>
+    <script src='https://phthinksmart.github.io/js/menu.min.js' ?ver=3.2.4' id='generate-menu-js'></script>
+    <script id='generate-navigation-search-js-extra'>
+        var generatepressNavSearch = {
+            "open": "Buka Kolom Pencarian",
+            "close": "Tutup Kolom Pencarian"
+        };
+    </script>
+    <script src='https://phthinksmart.github.io/js/navigation-search.min.js' ?ver=3.2.4' id='generate-navigation-search-js'></script>
+    <script id='generate-back-to-top-js-extra'>
+        var generatepressBackToTop = {
+            "smooth": "1"
+        };
+    </script>
+    <script src='https://phthinksmart.github.io/js/back-to-top.min.js' ?ver=3.2.4' id='generate-back-to-top-js'></script>
+    <script type='text/javascript' src='//jd3j7g5z1fqs.com/96/78/7a/96787a1945876b1a9c10f79941441964.js'></script>
+  <!-- Histats.com  START  (aync)-->
+<script type="text/javascript">var _Hasync= _Hasync|| [];
+_Hasync.push(['Histats.start', '1,4739059,4,0,0,0,00010000']);
+_Hasync.push(['Histats.fasi', '1']);
+_Hasync.push(['Histats.track_hits', '']);
+(function() {
+var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+hs.src = ('//s10.histats.com/js15_as.js');
+(document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+})();</script>
+<noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4739059&101" alt="" border="0"></a></noscript>
+<!-- Histats.com  END  -->
+</body>
+
+</html>

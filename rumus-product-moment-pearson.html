@@ -1,0 +1,1204 @@
+<!DOCTYPE html>
+<html lang="id" prefix="og: https://ogp.me/ns#">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="profile" href="https://gmpg.org/xfn/11">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Rumus Product Moment Pearson - QnA</title>
+    <meta name="description" content="Rumus Product Moment Pearson, , , , , , , 0, Rumus Korelasi Product Moment, www.scribd.com, 768 x 1024, jpeg, , 20, rumus-product-moment-pearson, QnA" />
+    <meta name="robots" content="index,follow" />
+    <meta property="og:locale" content="id_ID" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Rumus Product Moment Pearson - QnA" />
+    <meta property="og:description" content="Rumus Product Moment Pearson, , , , , , , 0, Rumus Korelasi Product Moment, www.scribd.com, 768 x 1024, jpeg, , 20, rumus-product-moment-pearson, QnA" />
+    <meta property="og:site_name" content="QnA" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Rumus Product Moment Pearson - QnA" />
+    <meta name="twitter:description" content="Rumus Product Moment Pearson, , , , , , , 0, Rumus Korelasi Product Moment, www.scribd.com, 768 x 1024, jpeg, , 20, rumus-product-moment-pearson, QnA" />
+    <link rel='stylesheet' id='generate-style-css' href='https://phthinksmart.github.io/css/main.min.css'?ver=3.2.4'
+        media='all' />
+    <link rel='stylesheet' id='ez-toc-css' href='https://phthinksmart.github.io/css/screen.min.css'?ver=2.0.40' media='all' />
+    <style id='generate-style-inline-css'>
+        body {
+            background-color: #f7f7f7;
+            color: #222222;
+        }
+
+        a {
+            color: #1e73be;
+        }
+
+        a:hover,
+        a:focus,
+        a:active {
+            color: #000000;
+        }
+
+        .wp-block-group__inner-container {
+            max-width: 1200px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .generate-back-to-top {
+            font-size: 20px;
+            border-radius: 3px;
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            line-height: 40px;
+            width: 40px;
+            text-align: center;
+            z-index: 10;
+            transition: opacity 300ms ease-in-out;
+            opacity: 0.1;
+            transform: translateY(1000px);
+        }
+
+        .generate-back-to-top__show {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        .navigation-search {
+            position: absolute;
+            left: -99999px;
+            pointer-events: none;
+            visibility: hidden;
+            z-index: 20;
+            width: 100%;
+            top: 0;
+            transition: opacity 100ms ease-in-out;
+            opacity: 0;
+        }
+
+        .navigation-search.nav-search-active {
+            left: 0;
+            right: 0;
+            pointer-events: auto;
+            visibility: visible;
+            opacity: 1;
+        }
+
+        .navigation-search input[type="search"] {
+            outline: 0;
+            border: 0;
+            vertical-align: bottom;
+            line-height: 1;
+            opacity: 0.9;
+            width: 100%;
+            z-index: 20;
+            border-radius: 0;
+            -webkit-appearance: none;
+            height: 60px;
+        }
+
+        .navigation-search input::-ms-clear {
+            display: none;
+            width: 0;
+            height: 0;
+        }
+
+        .navigation-search input::-ms-reveal {
+            display: none;
+            width: 0;
+            height: 0;
+        }
+
+        .navigation-search input::-webkit-search-decoration,
+        .navigation-search input::-webkit-search-cancel-button,
+        .navigation-search input::-webkit-search-results-button,
+        .navigation-search input::-webkit-search-results-decoration {
+            display: none;
+        }
+
+        .gen-sidebar-nav .navigation-search {
+            top: auto;
+            bottom: 0;
+        }
+
+        :root {
+            --contrast: #222222;
+            --contrast-2: #575760;
+            --contrast-3: #b2b2be;
+            --base: #f0f0f0;
+            --base-2: #f7f8f9;
+            --base-3: #ffffff;
+            --accent: #1e73be;
+        }
+
+        .has-contrast-color {
+            color: var(--contrast);
+        }
+
+        .has-contrast-background-color {
+            background-color: var(--contrast);
+        }
+
+        .has-contrast-2-color {
+            color: var(--contrast-2);
+        }
+
+        .has-contrast-2-background-color {
+            background-color: var(--contrast-2);
+        }
+
+        .has-contrast-3-color {
+            color: var(--contrast-3);
+        }
+
+        .has-contrast-3-background-color {
+            background-color: var(--contrast-3);
+        }
+
+        .has-base-color {
+            color: var(--base);
+        }
+
+        .has-base-background-color {
+            background-color: var(--base);
+        }
+
+        .has-base-2-color {
+            color: var(--base-2);
+        }
+
+        .has-base-2-background-color {
+            background-color: var(--base-2);
+        }
+
+        .has-base-3-color {
+            color: var(--base-3);
+        }
+
+        .has-base-3-background-color {
+            background-color: var(--base-3);
+        }
+
+        .has-accent-color {
+            color: var(--accent);
+        }
+
+        .has-accent-background-color {
+            background-color: var(--accent);
+        }
+
+        body,
+        button,
+        input,
+        select,
+        textarea {
+            font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+        }
+
+        body {
+            line-height: 1.5;
+        }
+
+        .entry-content>[class*="wp-block-"]:not(:last-child) {
+            margin-bottom: 1.5em;
+        }
+
+        .main-navigation .main-nav ul ul li a {
+            font-size: 14px;
+        }
+
+        .sidebar .widget,
+        .footer-widgets .widget {
+            font-size: 17px;
+        }
+
+        @media (max-width:768px) {
+            h1 {
+                font-size: 31px;
+            }
+
+            h2 {
+                font-size: 27px;
+            }
+
+            h3 {
+                font-size: 24px;
+            }
+
+            h4 {
+                font-size: 22px;
+            }
+
+            h5 {
+                font-size: 19px;
+            }
+        }
+
+        .top-bar {
+            background-color: #636363;
+            color: #ffffff;
+        }
+
+        .top-bar a {
+            color: #ffffff;
+        }
+
+        .top-bar a:hover {
+            color: #303030;
+        }
+
+        .site-header {
+            background-color: #ffffff;
+        }
+
+        .main-title a,
+        .main-title a:hover {
+            color: #222222;
+        }
+
+        .site-description {
+            color: #757575;
+        }
+
+        .main-navigation,
+        .main-navigation ul ul {
+            background-color: #ed4250;
+        }
+
+        .main-navigation .main-nav ul li a,
+        .main-navigation .menu-toggle,
+        .main-navigation .menu-bar-items {
+            color: #ffffff;
+        }
+
+        .main-navigation .main-nav ul li:not([class*="current-menu-"]):hover>a,
+        .main-navigation .main-nav ul li:not([class*="current-menu-"]):focus>a,
+        .main-navigation .main-nav ul li.sfHover:not([class*="current-menu-"])>a,
+        .main-navigation .menu-bar-item:hover>a,
+        .main-navigation .menu-bar-item.sfHover>a {
+            color: #ffffff;
+            background-color: #c42f2f;
+        }
+
+        button.menu-toggle:hover,
+        button.menu-toggle:focus {
+            color: #ffffff;
+        }
+
+        .main-navigation .main-nav ul li[class*="current-menu-"]>a {
+            color: #ffffff;
+            background-color: #c42f2f;
+        }
+
+        .navigation-search input[type="search"],
+        .navigation-search input[type="search"]:active,
+        .navigation-search input[type="search"]:focus,
+        .main-navigation .main-nav ul li.search-item.active>a,
+        .main-navigation .menu-bar-items .search-item.active>a {
+            color: #ffffff;
+            background-color: #c42f2f;
+        }
+
+        .main-navigation ul ul {
+            background-color: #c42f2f;
+        }
+
+        .main-navigation .main-nav ul ul li a {
+            color: #ffffff;
+        }
+
+        .main-navigation .main-nav ul ul li:not([class*="current-menu-"]):hover>a,
+        .main-navigation .main-nav ul ul li:not([class*="current-menu-"]):focus>a,
+        .main-navigation .main-nav ul ul li.sfHover:not([class*="current-menu-"])>a {
+            color: #fcd9d6;
+            background-color: #c42f2f;
+        }
+
+        .main-navigation .main-nav ul ul li[class*="current-menu-"]>a {
+            color: #fcd9d6;
+            background-color: #c42f2f;
+        }
+
+        .separate-containers .inside-article,
+        .separate-containers .comments-area,
+        .separate-containers .page-header,
+        .one-container .container,
+        .separate-containers .paging-navigation,
+        .inside-page-header {
+            background-color: #ffffff;
+        }
+
+        .entry-title a {
+            color: #222222;
+        }
+
+        .entry-title a:hover {
+            color: #55555e;
+        }
+
+        .entry-meta {
+            color: #595959;
+        }
+
+        .sidebar .widget {
+            background-color: #ffffff;
+        }
+
+        .footer-widgets {
+            background-color: #ffffff;
+        }
+
+        .footer-widgets .widget-title {
+            color: #000000;
+        }
+
+        .site-info {
+            color: #ffffff;
+            background-color: #55555e;
+        }
+
+        .site-info a {
+            color: #ffffff;
+        }
+
+        .site-info a:hover {
+            color: #d3d3d3;
+        }
+
+        .footer-bar .widget_nav_menu .current-menu-item a {
+            color: #d3d3d3;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        input[type="url"],
+        input[type="password"],
+        input[type="search"],
+        input[type="tel"],
+        input[type="number"],
+        textarea,
+        select {
+            color: #666666;
+            background-color: #fafafa;
+            border-color: #cccccc;
+        }
+
+        input[type="text"]:focus,
+        input[type="email"]:focus,
+        input[type="url"]:focus,
+        input[type="password"]:focus,
+        input[type="search"]:focus,
+        input[type="tel"]:focus,
+        input[type="number"]:focus,
+        textarea:focus,
+        select:focus {
+            color: #666666;
+            background-color: #ffffff;
+            border-color: #bfbfbf;
+        }
+
+        button,
+        html input[type="button"],
+        input[type="reset"],
+        input[type="submit"],
+        a.button,
+        a.wp-block-button__link:not(.has-background) {
+            color: #ffffff;
+            background-color: #55555e;
+        }
+
+        button:hover,
+        html input[type="button"]:hover,
+        input[type="reset"]:hover,
+        input[type="submit"]:hover,
+        a.button:hover,
+        button:focus,
+        html input[type="button"]:focus,
+        input[type="reset"]:focus,
+        input[type="submit"]:focus,
+        a.button:focus,
+        a.wp-block-button__link:not(.has-background):active,
+        a.wp-block-button__link:not(.has-background):focus,
+        a.wp-block-button__link:not(.has-background):hover {
+            color: #ffffff;
+            background-color: #3f4047;
+        }
+
+        a.generate-back-to-top {
+            background-color: rgba(0, 0, 0, 0.4);
+            color: #ffffff;
+        }
+
+        a.generate-back-to-top:hover,
+        a.generate-back-to-top:focus {
+            background-color: rgba(0, 0, 0, 0.6);
+            color: #ffffff;
+        }
+
+        @media (max-width:768px) {
+
+            .main-navigation .menu-bar-item:hover>a,
+            .main-navigation .menu-bar-item.sfHover>a {
+                background: none;
+                color: #ffffff;
+            }
+        }
+
+        .nav-below-header .main-navigation .inside-navigation.grid-container,
+        .nav-above-header .main-navigation .inside-navigation.grid-container {
+            padding: 0px 20px 0px 20px;
+        }
+
+        .site-main .wp-block-group__inner-container {
+            padding: 40px;
+        }
+
+        .separate-containers .paging-navigation {
+            padding-top: 20px;
+            padding-bottom: 20px;
+        }
+
+        .entry-content .alignwide,
+        body:not(.no-sidebar) .entry-content .alignfull {
+            margin-left: -40px;
+            width: calc(100% + 80px);
+            max-width: calc(100% + 80px);
+        }
+
+        .rtl .menu-item-has-children .dropdown-menu-toggle {
+            padding-left: 20px;
+        }
+
+        .rtl .main-navigation .main-nav ul li.menu-item-has-children>a {
+            padding-right: 20px;
+        }
+
+        @media (max-width:768px) {
+
+            .separate-containers .inside-article,
+            .separate-containers .comments-area,
+            .separate-containers .page-header,
+            .separate-containers .paging-navigation,
+            .one-container .site-content,
+            .inside-page-header {
+                padding: 30px;
+            }
+
+            .site-main .wp-block-group__inner-container {
+                padding: 30px;
+            }
+
+            .inside-top-bar {
+                padding-right: 30px;
+                padding-left: 30px;
+            }
+
+            .inside-header {
+                padding-right: 30px;
+                padding-left: 30px;
+            }
+
+            .widget-area .widget {
+                padding-top: 30px;
+                padding-right: 30px;
+                padding-bottom: 30px;
+                padding-left: 30px;
+            }
+
+            .footer-widgets-container {
+                padding-top: 30px;
+                padding-right: 30px;
+                padding-bottom: 30px;
+                padding-left: 30px;
+            }
+
+            .inside-site-info {
+                padding-right: 30px;
+                padding-left: 30px;
+            }
+
+            .entry-content .alignwide,
+            body:not(.no-sidebar) .entry-content .alignfull {
+                margin-left: -30px;
+                width: calc(100% + 60px);
+                max-width: calc(100% + 60px);
+            }
+
+            .one-container .site-main .paging-navigation {
+                margin-bottom: 20px;
+            }
+        }
+
+        /* End cached CSS */
+        .is-right-sidebar {
+            width: 30%;
+        }
+
+        .is-left-sidebar {
+            width: 30%;
+        }
+
+        .site-content .content-area {
+            width: 70%;
+        }
+
+        @media (max-width:768px) {
+
+            .main-navigation .menu-toggle,
+            .sidebar-nav-mobile:not(#sticky-placeholder) {
+                display: block;
+            }
+
+            .main-navigation ul,
+            .gen-sidebar-nav,
+            .main-navigation:not(.slideout-navigation):not(.toggled) .main-nav>ul,
+            .has-inline-mobile-toggle #site-navigation .inside-navigation>*:not(.navigation-search):not(.main-nav) {
+                display: none;
+            }
+
+            .nav-align-right .inside-navigation,
+            .nav-align-center .inside-navigation {
+                justify-content: space-between;
+            }
+        }
+    </style>
+    <link rel="icon" href="https://phthinksmart.github.io/img/cropped-soalbelajar-32x32.png" sizes="32x32" />
+    <link rel="icon" href="https://phthinksmart.github.io/img/cropped-soalbelajar-192x192.png" sizes="192x192" />
+    <link rel="apple-touch-icon" href="https://phthinksmart.github.io/img/cropped-soalbelajar-180x180.png" />
+    <meta name="msapplication-TileImage" content="https://phthinksmart.github.io/img/cropped-soalbelajar-270x270.png" />
+</head>
+
+<body
+    class="home blog wp-custom-logo wp-embed-responsive right-sidebar nav-above-header separate-containers nav-search-enabled nav-aligned-center header-aligned-center dropdown-hover"
+    itemtype="https://schema.org/Blog" itemscope>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false"
+        role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+        <defs>
+            <filter id="wp-duotone-dark-grayscale">
+                <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
+                    values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+                <feComponentTransfer color-interpolation-filters="sRGB">
+                    <feFuncR type="table" tableValues="0 0.49803921568627" />
+                    <feFuncG type="table" tableValues="0 0.49803921568627" />
+                    <feFuncB type="table" tableValues="0 0.49803921568627" />
+                    <feFuncA type="table" tableValues="1 1" />
+                </feComponentTransfer>
+                <feComposite in2="SourceGraphic" operator="in" />
+            </filter>
+        </defs>
+    </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false"
+        role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+        <defs>
+            <filter id="wp-duotone-grayscale">
+                <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
+                    values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+                <feComponentTransfer color-interpolation-filters="sRGB">
+                    <feFuncR type="table" tableValues="0 1" />
+                    <feFuncG type="table" tableValues="0 1" />
+                    <feFuncB type="table" tableValues="0 1" />
+                    <feFuncA type="table" tableValues="1 1" />
+                </feComponentTransfer>
+                <feComposite in2="SourceGraphic" operator="in" />
+            </filter>
+        </defs>
+    </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false"
+        role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+        <defs>
+            <filter id="wp-duotone-purple-yellow">
+                <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
+                    values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+                <feComponentTransfer color-interpolation-filters="sRGB">
+                    <feFuncR type="table" tableValues="0.54901960784314 0.98823529411765" />
+                    <feFuncG type="table" tableValues="0 1" />
+                    <feFuncB type="table" tableValues="0.71764705882353 0.25490196078431" />
+                    <feFuncA type="table" tableValues="1 1" />
+                </feComponentTransfer>
+                <feComposite in2="SourceGraphic" operator="in" />
+            </filter>
+        </defs>
+    </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false"
+        role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+        <defs>
+            <filter id="wp-duotone-blue-red">
+                <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
+                    values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+                <feComponentTransfer color-interpolation-filters="sRGB">
+                    <feFuncR type="table" tableValues="0 1" />
+                    <feFuncG type="table" tableValues="0 0.27843137254902" />
+                    <feFuncB type="table" tableValues="0.5921568627451 0.27843137254902" />
+                    <feFuncA type="table" tableValues="1 1" />
+                </feComponentTransfer>
+                <feComposite in2="SourceGraphic" operator="in" />
+            </filter>
+        </defs>
+    </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false"
+        role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+        <defs>
+            <filter id="wp-duotone-midnight">
+                <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
+                    values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+                <feComponentTransfer color-interpolation-filters="sRGB">
+                    <feFuncR type="table" tableValues="0 0" />
+                    <feFuncG type="table" tableValues="0 0.64705882352941" />
+                    <feFuncB type="table" tableValues="0 1" />
+                    <feFuncA type="table" tableValues="1 1" />
+                </feComponentTransfer>
+                <feComposite in2="SourceGraphic" operator="in" />
+            </filter>
+        </defs>
+    </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false"
+        role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+        <defs>
+            <filter id="wp-duotone-magenta-yellow">
+                <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
+                    values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+                <feComponentTransfer color-interpolation-filters="sRGB">
+                    <feFuncR type="table" tableValues="0.78039215686275 1" />
+                    <feFuncG type="table" tableValues="0 0.94901960784314" />
+                    <feFuncB type="table" tableValues="0.35294117647059 0.47058823529412" />
+                    <feFuncA type="table" tableValues="1 1" />
+                </feComponentTransfer>
+                <feComposite in2="SourceGraphic" operator="in" />
+            </filter>
+        </defs>
+    </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false"
+        role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+        <defs>
+            <filter id="wp-duotone-purple-green">
+                <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
+                    values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+                <feComponentTransfer color-interpolation-filters="sRGB">
+                    <feFuncR type="table" tableValues="0.65098039215686 0.40392156862745" />
+                    <feFuncG type="table" tableValues="0 1" />
+                    <feFuncB type="table" tableValues="0.44705882352941 0.4" />
+                    <feFuncA type="table" tableValues="1 1" />
+                </feComponentTransfer>
+                <feComposite in2="SourceGraphic" operator="in" />
+            </filter>
+        </defs>
+    </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false"
+        role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+        <defs>
+            <filter id="wp-duotone-blue-orange">
+                <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
+                    values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+                <feComponentTransfer color-interpolation-filters="sRGB">
+                    <feFuncR type="table" tableValues="0.098039215686275 1" />
+                    <feFuncG type="table" tableValues="0 0.66274509803922" />
+                    <feFuncB type="table" tableValues="0.84705882352941 0.41960784313725" />
+                    <feFuncA type="table" tableValues="1 1" />
+                </feComponentTransfer>
+                <feComposite in2="SourceGraphic" operator="in" />
+            </filter>
+        </defs>
+    </svg><a class="screen-reader-text skip-link" href="#content" title="Langsung ke isi">Langsung ke isi</a>
+    <nav class="main-navigation nav-align-center has-menu-bar-items sub-menu-right" id="site-navigation"
+        aria-label="Utama" itemtype="https://schema.org/SiteNavigationElement" itemscope>
+        <div class="inside-navigation grid-container">
+            <form method="get" class="search-form navigation-search" action="/">
+                <input type="search" class="search-field" value="" name="q" title="Cari" />
+            </form> <button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false">
+                <span class="gp-icon icon-menu-bars"><svg viewBox="0 0 512 512" aria-hidden="true"
+                        xmlns="http://www.w3.org/2000/svg" width="1em" height="1em">
+                        <path
+                            d="M0 96c0-13.255 10.745-24 24-24h464c13.255 0 24 10.745 24 24s-10.745 24-24 24H24c-13.255 0-24-10.745-24-24zm0 160c0-13.255 10.745-24 24-24h464c13.255 0 24 10.745 24 24s-10.745 24-24 24H24c-13.255 0-24-10.745-24-24zm0 160c0-13.255 10.745-24 24-24h464c13.255 0 24 10.745 24 24s-10.745 24-24 24H24c-13.255 0-24-10.745-24-24z" />
+                    </svg><svg viewBox="0 0 512 512" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                        width="1em" height="1em">
+                        <path
+                            d="M71.029 71.029c9.373-9.372 24.569-9.372 33.942 0L256 222.059l151.029-151.03c9.373-9.372 24.569-9.372 33.942 0 9.372 9.373 9.372 24.569 0 33.942L289.941 256l151.03 151.029c9.372 9.373 9.372 24.569 0 33.942-9.373 9.372-24.569 9.372-33.942 0L256 289.941l-151.029 151.03c-9.373 9.372-24.569 9.372-33.942 0-9.372-9.373-9.372-24.569 0-33.942L222.059 256 71.029 104.971c-9.372-9.373-9.372-24.569 0-33.942z" />
+                    </svg></span><span class="mobile-menu">Menu</span> </button>
+            <div id="primary-menu" class="main-nav">
+                <ul id="menu-soal-belajar" class=" menu sf-menu">
+                    <li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-1"><a
+                            href="https://phthinksmart.github.io">Home</a></li>
+                </ul>
+                </ul>
+            </div>
+            <div class="menu-bar-items"><span class="menu-bar-item search-item"><a aria-label="Buka Kolom Pencarian"
+                        href="#"><span class="gp-icon icon-search"><svg viewBox="0 0 512 512"
+                                aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em">
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M208 48c-88.366 0-160 71.634-160 160s71.634 160 160 160 160-71.634 160-160S296.366 48 208 48zM0 208C0 93.125 93.125 0 208 0s208 93.125 208 208c0 48.741-16.765 93.566-44.843 129.024l133.826 134.018c9.366 9.379 9.355 24.575-.025 33.941-9.379 9.366-24.575 9.355-33.941-.025L337.238 370.987C301.747 399.167 256.839 416 208 416 93.125 416 0 322.875 0 208z" />
+                            </svg><svg viewBox="0 0 512 512" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                                width="1em" height="1em">
+                                <path
+                                    d="M71.029 71.029c9.373-9.372 24.569-9.372 33.942 0L256 222.059l151.029-151.03c9.373-9.372 24.569-9.372 33.942 0 9.372 9.373 9.372 24.569 0 33.942L289.941 256l151.03 151.029c9.372 9.373 9.372 24.569 0 33.942-9.373 9.372-24.569 9.372-33.942 0L256 289.941l-151.029 151.03c-9.373 9.372-24.569 9.372-33.942 0-9.372-9.373-9.372-24.569 0-33.942L222.059 256 71.029 104.971c-9.372-9.373-9.372-24.569 0-33.942z" />
+                            </svg></span></a></span></div>
+        </div>
+    </nav>
+    <header class="site-header grid-container" id="masthead" aria-label="Situs"
+        itemtype="https://schema.org/WPHeader" itemscope>
+        <div class="inside-header grid-container">
+            <h1 class="site-logo">
+                <a href="https://phthinksmart.github.io" rel="home"> QnA</a>
+            </h1>
+        </div>
+    </header>
+
+    <div class="site grid-container container hfeed" id="page">
+        <div class="site-content" id="content">
+            <div class="content-area" id="primary">
+                    <main class="site-main" id="main">
+        <article id="post-1327" class="post-1327 post type-post status-publish format-standard hentry category-info"
+            itemtype="https://schema.org/CreativeWork" itemscope="">
+            <div class="inside-article">
+                <header class="entry-header" aria-label="Konten">
+                    <h1 class="entry-title" itemprop="headline">Rumus Product Moment Pearson</h1>
+                    <div class="entry-meta">
+                       <span
+                            class="byline">oleh <span class="author vcard" itemprop="author"
+                                itemtype="https://schema.org/Person" itemscope=""><span class="author-name"
+                                    itemprop="name">michellahung</span></span></span>
+                    </div>
+                </header>
+                <div class="entry-content" itemprop="text">
+                    <div style="text-align: center">
+                        <img src="https://tse1.mm.bing.net/th?q=Rumus+Product+Moment+Pearson" alt="Rumus Product Moment Pearson">
+                    </div>
+                    <p></p>
+                    <p>Sebutkan dan jelaskan syarat dan ketentuan melakukan uji korelasi pearson product moment</p>
+                    <div id="ez-toc-container"
+                        class="ez-toc-v2_0_40 counter-hierarchy ez-toc-counter ez-toc-light-blue ez-toc-container-direction">
+                        <div class="ez-toc-title-container">
+                            <p class="ez-toc-title">Daftar Isi</p>
+                            <span class="ez-toc-title-toggle"><a href="#"
+                                    class="ez-toc-pull-right ez-toc-btn ez-toc-btn-xs ez-toc-btn-default ez-toc-toggle"
+                                    area-label="ez-toc-toggle-icon-1"><label for="item-63b392361c4a0"
+                                        aria-label="Table of Content"><span
+                                            style="display: flex;align-items: center;width: 35px;height: 30px;justify-content: center;direction:ltr;"><svg
+                                                style="fill: #999;color:#999" xmlns="http://www.w3.org/2000/svg"
+                                                class="list-377408" width="20px" height="20px" viewBox="0 0 24 24"
+                                                fill="none">
+                                                <path
+                                                    d="M6 6H4v2h2V6zm14 0H8v2h12V6zM4 11h2v2H4v-2zm16 0H8v2h12v-2zM4 16h2v2H4v-2zm16 0H8v2h12v-2z"
+                                                    fill="currentColor"></path>
+                                            </svg><svg style="fill: #999;color:#999" class="arrow-unsorted-368013"
+                                                xmlns="http://www.w3.org/2000/svg" width="10px" height="10px"
+                                                viewBox="0 0 24 24" version="1.2" baseProfile="tiny">
+                                                <path
+                                                    d="M18.2 9.3l-6.2-6.3-6.2 6.3c-.2.2-.3.4-.3.7s.1.5.3.7c.2.2.4.3.7.3h11c.3 0 .5-.1.7-.3.2-.2.3-.5.3-.7s-.1-.5-.3-.7zM5.8 14.7l6.2 6.3 6.2-6.3c.2-.2.3-.5.3-.7s-.1-.5-.3-.7c-.2-.2-.4-.3-.7-.3h-11c-.3 0-.5.1-.7.3-.2.2-.3.5-.3.7s.1.5.3.7z">
+                                                </path>
+                                            </svg></span></label><input type="checkbox" id="item-63b392361c4a0"></a></span>
+                        </div>
+                        <nav>
+                            <ul class="ez-toc-list ez-toc-list-level-1 ">
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#sebutkan-dan-jelaskan-syarat-dan-ketentuan-melakukan-uji-korelasi-pearson-product-moment">1.
+                                            Sebutkan dan jelaskan syarat dan ketentuan melakukan uji korelasi pearson product moment</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#jelaskan-tentang-rumus-korelasi-product-moment">2.
+                                            Jelaskan tentang rumus korelasi product moment</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#teknik-pearson-roduct-moment-correlation%e2%80%8b">3.
+                                            teknik Pearson roduct moment correlation​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#pemikiran-james-douglas-pearson-tentang-al-quran">4.
+                                            pemikiran james douglas pearson tentang al-qur'an</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#tugasa-christmas-carol-harlow-pearson-education-limited">5.
+                                            Tugas
+A Christmas Carol. Harlow: Pearson Education Limited</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#obey-god-moment-by-moment-adalah">6.
+                                            obey god moment by moment adalah</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#dengan-menggunakan-rumus-pearson-i-maka-koefisien-kemiringan-dari-data-5-67854659-dan-4-adl">7.
+                                            dengan menggunakan rumus pearson I, maka koefisien kemiringan dari data : 5, 6,7,8,5,4,6,5,9, dan 4 adl</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#tuliskan-rumus-net-nasional-product-nnp">8.
+                                            Tuliskan rumus Net Nasional Product (NNP)!</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#apa-yang-dimaksud-dengan-%c2%a0produk-domestik-bruto-%c2%a0dan-rumusnyaapa-yang-dimaksud-dengan-gross-national-product-dan-apa-rumusnya">9.
+                                            apa yang dimaksud dengan  produk domestik bruto?  dan rumusnya?apa yang dimaksud dengan gross national product ? dan apa rumusnya?</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#rumus-moment-gaya-tinorsi">10.
+                                            Rumus moment gaya tinorsi</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#tuliskan-rumus-net-national-product-nnp">11.
+                                            tuliskan rumus Net National Product (NNP)</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#rumus-average-product">12.
+                                            rumus average product </a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#ditulis-rumus-product-d4e4-akan-menghasilkan-nilai-angka">13.
+                                            ditulis rumus = PRODUCT (D4:E4) akan menghasilkan nilai angka?</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#rumus-dan-dimensi-moment-inersia">14.
+                                            rumus dan dimensi moment inersia</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#rumus-product-d4e4-akan-menghasilkan-nilai-angka">15.
+                                            Rumus PRODUCT (D4:E4) akan menghasilkan nilai angka ...</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#sebuah-penelitian-dengan-judul-hubungan-lama-pkl-dengan-kompetensi-siswa-smk-bunga-bangsa-di-peroleh-data-lama-magang-7-6489467-dan-kompetensi-siswa-2-56784-64-hitunglah-hipotsesis-stat">16.
+                                            Sebuah penelitian dengan judul hubungan lama pkl dengan kompetensi siswa smk bunga bangsa di peroleh data, lama magang 7, 6,4,8,9,4,6,7 dan kompetensi siswa 2, 5,6,7,8,4, 6,4 hitunglah hipotsesis statistik, dan nilai r( pearson produk moment). Terima Kasih</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#last-name-is-pearson">17.
+                                            ....... last name is pearson </a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#mana-diantara-pilihan-berikut-yang-bukan-merupakan-statistika-deskriptif-a-meanb-modusc-desild-pearson-product-momene-poligon-frekuensi">18.
+                                            Mana diantara pilihan berikut yang bukan merupakan statistika deskriptif.? 
+A. MEAN
+B.  MODUS
+C.  DESIL
+D.  PEARSON PRODUCT MOMEN
+E.  POLIGON FREKUENSI</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#menghitung-koefisien-kecondongan-menurut-pearson-dari-sampel">19.
+                                            Menghitung koefisien kecondongan menurut Pearson dari sampel</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#pearson-bahasa-indonesianya-apa%e2%80%8b">20.
+                                            pearson bahasa Indonesianya apa​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#dari-sekumpulan-data-diketahui-modus-34-standar-deviasi-2-dan-koefisien-kemiringan-yang-dihitung-dengan-rumus-pearson-adalah-25-rata-rata-data-tersebut-adalah">21.
+                                            dari sekumpulan data diketahui modus = 34, standar deviasi = 2 dan koefisien kemiringan yang dihitung dengan rumus pearson adalah 2,5. rata-rata data tersebut adalah?</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#cara-menghitung-koefisien-kecondongan-menurut-pearson-yaitu">22.
+                                            Cara menghitung koefisien kecondongan menurut Pearson yaitu....</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#rumus-mencari-moment-gaya-yang-bekerja-pada-tongkat-miring-30-derajat-terhadap-vertia">23.
+                                            rumus mencari moment gaya yang bekerja pada tongkat miring 30 derajat terhadap vertia</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#physics-principles-with-applications-pearson">24.
+                                            Physics principles with applications pearson !</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#jelaskan-apa-yang-dimaksud-dengan-total-productmarginal-productaverange-product">25.
+                                            Jelaskan apa yang dimaksud dengan total product,marginal product,averange product?</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#apakah-melakukan-uji-pearson-dan-spearman-menggunakan-spss%e2%80%8b">26.
+                                            apakah melakukan uji Pearson dan spearman menggunakan SPSS​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#rumus-dan-dimensi-moment-gaya">27.
+                                            rumus Dan dimensi moment gaya</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#answer-strategic-management-by-pearson-microsoft-excel">28.
+                                            Answer strategic management by pearson microsoft excel !</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#apa-perbedaan-actual-product-dengan-product-attribute">29.
+                                            Apa perbedaan Actual Product dengan Product Attribute?</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#hubungan-antara-total-product-dengan-average-product">30.
+                                            hubungan antara total product dengan average product</a>
+                                    </li>
+                                                            </ul>
+                        </nav>
+                    </div>
+                                            <h2 class="ez-toc-section" id="sebutkan-dan-jelaskan-syarat-dan-ketentuan-melakukan-uji-korelasi-pearson-product-moment">
+                            1. Sebutkan dan jelaskan syarat dan ketentuan melakukan uji korelasi pearson product moment</h2><br />
+                        <p><strong>Jawaban:</strong></p><p>Uji Pearson Product Moment adalah salah satu dari beberapa jenis uji korelasi yang digunakan untuk mengetahui derajat keeratan hubungan 2 variabel yang berskala interval atau rasio, di mana dengan uji ini akan mengembalikan nilai koefisien korelasi yang nilainya berkisar antara -1, 0 dan 1. Nilai -1 artinya terdapat korelasi negatif yang sempurna, 0 artinya tidak ada korelasi dan nilai 1 berarti ada korelasi positif yang sempurna.</p><p></p><p>Rentang dari koefisien korelasi yang berkisar antara -1, 0 dan 1 tersebut dapat disimpulkan bahwa apabila semakin mendekati nilai 1 atau -1 maka hubungan makin erat, sedangkan jika semakin mendekati 0 maka hubungan semakin lemah.</p><br />
+                                            <h2 class="ez-toc-section" id="jelaskan-tentang-rumus-korelasi-product-moment">
+                            2. Jelaskan tentang rumus korelasi product moment</h2><br />
+                        Rumus Pearson Product Moment<br /><br />Koefisien Korelasi Sederhana disebut juga dengan Koefisien Korelasi Pearson karena rumus perhitungan Koefisien korelasi sederhana ini dikemukakan oleh Karl Pearson yaitu seorang ahli Matematika yang berasal dari Inggris.<br /><br />Rumus yang dipergunakan untuk menghitung Koefisien Korelasi Sederhana adalah sebagai berikut :<br />(Rumus ini disebut juga dengan Pearson Product Moment)<br /><br />r =               nΣxy – (Σx) (Σy)                   <br />.         √{nΣx² – (Σx)²} {nΣy2 – (Σy)2}<br /><br />Dimana :<br /><br />n    = Banyaknya Pasangan data X dan Y<br />Σx = Total Jumlah dari Variabel X<br />Σy = Total Jumlah dari Variabel Y<br />Σx2= Kuadrat dari Total Jumlah Variabel X<br />Σy2= Kuadrat dari Total Jumlah Variabel Y<br />Σxy= Hasil Perkalian dari Total Jumlah Variabel X dan Variabel Y<br />Semoga bermanfaat jadikan yg terbaik ya...<br />
+                                            <h2 class="ez-toc-section" id="teknik-pearson-roduct-moment-correlation%e2%80%8b">
+                            3. teknik Pearson roduct moment correlation​</h2><br />
+                        <p><strong>Jawab:</strong></p><p>Uji Pearson Product Moment adalah salah satu dari beberapa jenis uji korelasi yang digunakan untuk mengetahui derajat keeratan hubungan 2 variabel yang berskala interval atau rasio, di mana dengan uji ini akan mengembalikan nilai koefisien korelasi yang nilainya berkisar antara -1, 0 dan 1. Nilai -1 artinya terdapat korelasi negatif yang sempurna, 0 artinya tidak ada korelasi dan nilai 1 berarti ada korelasi positif yang sempurna.
+</p><p>
+</p><p>Rentang dari koefisien korelasi yang berkisar antara -1, 0 dan 1 tersebut dapat disimpulkan bahwa apabila semakin mendekati nilai 1 atau -1 maka hubungan makin erat, sedangkan jika semakin mendekati 0 maka hubungan semakin lemah.</p><p></p><br />
+                                            <h2 class="ez-toc-section" id="pemikiran-james-douglas-pearson-tentang-al-quran">
+                            4. pemikiran james douglas pearson tentang al-qur'an</h2><br />
+                        <p><strong>Jawaban:</strong></p><p><strong>Saran</strong><strong> </strong><strong>Saya</strong><strong> </strong><strong>Lihat</strong><strong> </strong><strong>Di</strong><strong> </strong><strong>Google </strong><strong>Atau </strong><strong> </strong><strong>YouTube</strong></p><p></p><p><strong>Itu</strong><strong> </strong><strong>saran</strong><strong> </strong><strong>Saya</strong><strong>^_^</strong></p><br />
+                                            <h2 class="ez-toc-section" id="tugasa-christmas-carol-harlow-pearson-education-limited">
+                            5. Tugas
+A Christmas Carol. Harlow: Pearson Education Limited</h2><br />
+                        <p><strong>Jawaban:</strong></p><p>pertanyaan nya pa sista ??</p><br />
+                                            <h2 class="ez-toc-section" id="obey-god-moment-by-moment-adalah">
+                            6. obey god moment by moment adalah</h2><br />
+                        artinya adalah Taatilah tuhan dari saat ke saat<br />
+                                            <h2 class="ez-toc-section" id="dengan-menggunakan-rumus-pearson-i-maka-koefisien-kemiringan-dari-data-5-67854659-dan-4-adl">
+                            7. dengan menggunakan rumus pearson I, maka koefisien kemiringan dari data : 5, 6,7,8,5,4,6,5,9, dan 4 adl</h2><br />
+                        dan 4 adalah jeng jeng jeng<br />-<br />-<br />-<br />-<br />-<br />-<br />-<br />-<br />-<br />-<br />-<br />-<br />--<br />-<br />-<br />-<br />-<br />-<br />-<br />-<br />-<br />-<br />-<br />-<br /><br />1,2 dan 3<br /><br /><br />
+                                            <h2 class="ez-toc-section" id="tuliskan-rumus-net-nasional-product-nnp">
+                            8. Tuliskan rumus Net Nasional Product (NNP)!</h2><br />
+                        <p><strong>Jawaban:</strong></p><p>Net National Product (NNP)</p><p>⠀ Net National Product (NNP) merupakan jumlah barang dan jasa yang dihasilkan oleh suatu negara dan pada periode tertentu yang dikurangi dengan penyusutan (depresiasi) serta barang pengganti modal</p><p>Rumus:</p><p>NNP = GNP - (Penyusutan Barang Modal)</p><br />
+                                            <h2 class="ez-toc-section" id="apa-yang-dimaksud-dengan-%c2%a0produk-domestik-bruto-%c2%a0dan-rumusnyaapa-yang-dimaksud-dengan-gross-national-product-dan-apa-rumusnya">
+                            9. apa yang dimaksud dengan  produk domestik bruto?  dan rumusnya?apa yang dimaksud dengan gross national product ? dan apa rumusnya?</h2><br />
+                        -)Produk domestik bruto adalah nilai pasar semua barang dan jasa yang diproduksi oleh suatu negara pada periode tertentu. Produk Domestik Broto (PDB)merupakan salah satu metode untuk menghitung pendapatan nasional.<br />Rumus umum untuk PDB dengan pendekatan pengeluaran adalah:PDB = konsumsi + investasi +pengeluaran pemerintah + (ekspor + impor )<br />-)Gross Natioanal Product adalah nilai seluruh barang-barang dan jasa-jasa yang dihasilkan oleh sesuatu perekonomian dalam suatu periode tertentu.<br />Rumus nya NI(National Income atau pendapatan nasioanal) = harga satuan produk)(Produk utama) + P2Q-2 + ..... + PnQn<br /><br />Kurang lebih seperti itu :) maaf kalau kurang <br />
+                                            <h2 class="ez-toc-section" id="rumus-moment-gaya-tinorsi">
+                            10. Rumus moment gaya tinorsi</h2><br />
+                        momen gaya torsi /tinorsi..?<br />kalau momen gaya torso<br />T=F.l<br />T=momen gaya (N/m)<br />F=gaya (N)<br />l=lengan momen (N)<br /><br />jika ada sudutnya<br />T=F.l sin teta<br />
+                                            <h2 class="ez-toc-section" id="tuliskan-rumus-net-national-product-nnp">
+                            11. tuliskan rumus Net National Product (NNP)</h2><br />
+                        NNP (Net National Product)<br /><br /> <br /><br />NNP adalah jumlah barang dan jasa yang dihasilkan oleh masyarakat dalam periode tertentu, setelah dikurangi penyusutan (depresiasi) dan barang pengganti modal.<br /><br /> <br /><br />Rumus :<br /><br />NNP = GNP – Penyusutan<br /><br /><br />
+                                            <h2 class="ez-toc-section" id="rumus-average-product">
+                            12. rumus average product </h2><br />
+                        Produksi rata - rata ( average product ) : AP. APL = TP/L atau APK = TP/K<br />
+                                            <h2 class="ez-toc-section" id="ditulis-rumus-product-d4e4-akan-menghasilkan-nilai-angka">
+                            13. ditulis rumus = PRODUCT (D4:E4) akan menghasilkan nilai angka?</h2><br />
+                        data dari kolom D4 sampai E4 ya ya ya ya ya ya<br />
+                                            <h2 class="ez-toc-section" id="rumus-dan-dimensi-moment-inersia">
+                            14. rumus dan dimensi moment inersia</h2><br />
+                        momen inersia (I)<br />I = m r²<br />I = kilogram . meter²<br />I = [M] [L]²I=m.R²<br />Keterangan:<br />I    = Momen Inersia (Kg m2)<br />m  = Massa partikel (Kg)<br />R  = Jari-jari Rotasi (m)<br />
+                                            <h2 class="ez-toc-section" id="rumus-product-d4e4-akan-menghasilkan-nilai-angka">
+                            15. Rumus PRODUCT (D4:E4) akan menghasilkan nilai angka ...</h2><br />
+                        hasilnya mengkalian semua data dari sel d4 s.d sel e.4<br />semoga cukup jlas<br />
+                                            <h2 class="ez-toc-section" id="sebuah-penelitian-dengan-judul-hubungan-lama-pkl-dengan-kompetensi-siswa-smk-bunga-bangsa-di-peroleh-data-lama-magang-7-6489467-dan-kompetensi-siswa-2-56784-64-hitunglah-hipotsesis-stat">
+                            16. Sebuah penelitian dengan judul hubungan lama pkl dengan kompetensi siswa smk bunga bangsa di peroleh data, lama magang 7, 6,4,8,9,4,6,7 dan kompetensi siswa 2, 5,6,7,8,4, 6,4 hitunglah hipotsesis statistik, dan nilai r( pearson produk moment). Terima Kasih</h2><br />
+                        <p>Terdapat suatu <strong>penelitian</strong>. Judulnya yaitu: "Hubungan Lama PKL (Praktik Kerja Lapangan) dengan Kompetensi Siswa SMK (Sekolah Menengah Kejuruan) Bunga Bangsa". Pada penelitian, didapatkan <strong>data </strong>sebagai berikut:</p><p>Lama Magang: 7, 6, 4, 8, 9, 4, 6, 7</p><p>Kompetensi Siswa: 2, 5, 6, 7, 8, 4, 6, 4</p><p><strong>Hipotesis statistik</strong> untuk penelitian ini adalah: <strong>H₀: ρ = 0 dan H₁: ρ ≠ 0</strong>. Nilai <strong>r</strong> (<strong>Pearson Product Moment</strong>) sebesar <strong>0,35</strong>.</p><p></p>Penjelasan dengan langkah-langkah<p><strong>Diketahui</strong>:</p><p>Data penelitian:</p><p>Lama Magang: 7, 6, 4, 8, 9, 4, 6, 7</p><p>Kompetensi Siswa: 2, 5, 6, 7, 8, 4, 6, 4</p><p><strong>Ditanya</strong>: hipotesis statistik &amp; r</p><p></p><p><strong>Jawab</strong>:</p><strong>Hipotesis statistik</strong><p>Karena penelitian ingin mengetahui <strong>hubungan </strong>antara dua variabel, yaitu lama PKL/magang dengan tingkat kompetensi siswa SMK, maka statistik yang menjadi fokus perhatian adalah nilai <strong>koefisien korelasi</strong> (ρ untuk populasi dan r untuk sampel). Karena tidak diberikan nilai korelasi tertentu, asumsikan bahwa penelitian bertujuan mengetahui adanya hubungan tersebut atau tidak. Tidak ada hubungan berarti nilai korelasinya adalah nol. Hipotesis ini dituliskan pada <strong>hipotesis nol</strong> karena memuat tanda kesamaan. <strong>Hipotesis alternatifnya</strong> yaitu nilai korelasi yang bukan nol. Hipotesis ini dituliskan sebagai berikut:</p><p>H₀: ρ = 0</p><p>H₁: ρ ≠ 0</p><strong>Perkalian antara masing-masing observasi pada kedua variabel</strong><p>     X     Y     XY     X²     Y²</p><p>     7      2     14     49      4</p><p>     6      5    30     36     25</p><p>     4      6    24      16     36</p><p>     8      7    56     64     49</p><p>     9      8    72      81     64</p><p>     4      4     16      16      16</p><p>     6      6    36     36     36</p><p>     7      4    28     49      16</p><strong>Jumlahan</strong><p>∑X = 7+6+4+8+9+4+6+7 = 51</p><p>∑Y = 2+5+6+7+8+4+6+4 = 42</p><p>∑XY = 14+30+24+56+72+16+36+28 = 276</p><p>∑X² = 49+36+16+64+81+16+36+49 = 347</p><p>∑Y² = 4+25+36+49+64+16+36+16 = 246</p><strong>Nilai r (</strong><strong>Pearson Product Moment</strong><strong>)</strong><p>Pembilang r = N∑XY-∑X∑Y = 8·276-51·42 = 2208-2142 = 66</p><p>Penyebut r = √[N∑X²-(∑X)²][N∑Y²-(∑Y)²]</p><p>= √(8·347-51²)(8·246-42²)</p><p>= √(2776-2601)(1968-1764)</p><p>= √175·204</p><p>= √35700</p><p>= 10√357</p><p></p><p>[tex]r=\frac{N\Sigma XY-\Sigma X\Sigma Y}{\sqrt{[N\Sigma X^2-(\Sigma X)^2][N\Sigma Y^2-(\Sigma Y)^2]}}=\frac{66}{10\sqrt{357}}\approx0,35[/tex]</p><p></p><p>Jadi, nilai r-nya adalah <strong>0,35</strong>.</p><p></p>Pelajari lebih lanjut<p>Materi tentang Konsep Koefisien Korelasi https://brainly.co.id/tugas/18997535</p><p><strong>#BelajarBersamaBrainly</strong></p><p><strong>#SPJ1</strong></p><br />
+                                            <h2 class="ez-toc-section" id="last-name-is-pearson">
+                            17. ....... last name is pearson </h2><br />
+                        <p>my last name is pearson</p><br /><br />
+                                            <h2 class="ez-toc-section" id="mana-diantara-pilihan-berikut-yang-bukan-merupakan-statistika-deskriptif-a-meanb-modusc-desild-pearson-product-momene-poligon-frekuensi">
+                            18. Mana diantara pilihan berikut yang bukan merupakan statistika deskriptif.? 
+A. MEAN
+B.  MODUS
+C.  DESIL
+D.  PEARSON PRODUCT MOMEN
+E.  POLIGON FREKUENSI</h2><br />
+                        mean<br />modus<br />desil <br />poligon frekuensi<br />
+                                            <h2 class="ez-toc-section" id="menghitung-koefisien-kecondongan-menurut-pearson-dari-sampel">
+                            19. Menghitung koefisien kecondongan menurut Pearson dari sampel</h2><br />
+                        <p><strong>Jawaban:</strong></p><p>koifisen ya kecondogan </p><p>adalah hitung lah awal dari sebuah perpangatan biasa </p><br />
+                                            <h2 class="ez-toc-section" id="pearson-bahasa-indonesianya-apa%e2%80%8b">
+                            20. pearson bahasa Indonesianya apa​</h2><br />
+                        <p><strong>Penjelasan:</strong></p><p>pribadi atau personalis</p><p>pribadi</p><p></p><p>kalo salah <strong>m</strong><strong>a</strong><strong>a</strong><strong>f</strong></p><br />
+                                            <h2 class="ez-toc-section" id="dari-sekumpulan-data-diketahui-modus-34-standar-deviasi-2-dan-koefisien-kemiringan-yang-dihitung-dengan-rumus-pearson-adalah-25-rata-rata-data-tersebut-adalah">
+                            21. dari sekumpulan data diketahui modus = 34, standar deviasi = 2 dan koefisien kemiringan yang dihitung dengan rumus pearson adalah 2,5. rata-rata data tersebut adalah?</h2><br />
+                        Rumus yang digunakan Karl Pierson 1<br />μ = (Х - Mo)/S<br />2,5 = (X - 34)/2<br />2,5(2) + 34 = X<br />X = 39  (rata-rata)<br /><br />
+                                            <h2 class="ez-toc-section" id="cara-menghitung-koefisien-kecondongan-menurut-pearson-yaitu">
+                            22. Cara menghitung koefisien kecondongan menurut Pearson yaitu....</h2><br />
+                        <p><strong>Rumus koefisien kecondongan </strong>(skewness) menurut <strong>Pearson</strong>:</p><p>[tex]sk_{1} = \frac{(mean - modus)} {deviasi standar}[/tex]</p><p>atau</p><p>[tex]sk_{2} = \frac{3(mean - median)} {deviasi standar}[/tex]</p><p>Rumus pertama berdasarkan selisih rata-rata dengan modus. Sedangkan rumus kedua berdasarkan selisih rata-rata dengan median. Jika koefisien kecondongan bernilai positif, maka arah kecondongan ke kanan. Jika koefisien kecondongan bernilai negatif, maka arah kecondongan ke kiri. Simak penjelasan berikut.</p><p></p>Pembahasan<p><strong>Koefisien kecondongan</strong> (skewness) adalah ukuran yang menunjukkan ketidaksimetrisan suatu kurva. Jika  nilai mean, modus, dan median suatu data adalah sama, maka distribusi data tentunya akan simetris. Bila tidak, maka kurva yang terbentuk akan condong ke sisi tertentu.</p><p>Menurut <strong>Pearson</strong>, koefisien kecondongan dapat diukur dengan penekanan pada nilai modus atau nilai median. Berikut rumus untuk menghitung koefisien kecondongan Pearson (sk).</p><p>[tex]sk_{1} = \frac{(mean - modus)} {deviasi standar}[/tex]</p><p>atau</p><p>[tex]sk_{2} = \frac{3(mean - median)} {deviasi standar}[/tex]</p><p>Rumus pertama berdasarkan nilai modus. Rumus kedua berdasarkan nilai median yang digunakan ketika modus lebih dari 1. Berikut tentang mean, median, modus, dan deviasi standar.</p><strong>Mean</strong> (rata-rata) adalah bilangan yang mewakil sekelompok data yang didapatkan dari hasil pembagian jumlah seluruh data dengan banyaknya data. Mean dirumuskan: Mean = jumlah data ÷ banyak data.<strong>Median</strong> (Nilai tengah) adalah nilai di posisi tengah dari data yang dirurutkan dari yang terkecil.<strong>Modus </strong>adalah nilai yang paling sering muncul atau paling banyak.<strong>Deviasi standar</strong> (simpangan baku) adalah ukuran sebaran statistik atau rata-rata jarak penyimpangan dari nilai rata-rata seluruh data. <p>Deviasi standar dirumuskan sebagai berikut.</p><p>[tex]S = \sqrt{ \frac{\sum (x_{i} - x)^{2}}{n} }[/tex]</p><p>dengan</p>S = simpangan bakuxi = datax = rata-ratan = jumlah data<p>Jika koefisien kecondongan bernilai positif, maka arah kecondongan ke kanan dan data terkonsentrasi pada nilai yang rendah. Jika koefisien kecondongan bernilai negatif, maka arah kecondongan ke kiri dan data terkonsentrasi pada nilai tinggi. </p><p></p>Pelajari lebih lanjutSoal tentang menentukan <strong>koefisien kecondongan Pearson</strong> dari sekelompok data: https://brainly.co.id/tugas/34805890Materi dan soal tentang menghitung deviasi standar: https://brainly.co.id/tugas/25874129Soal tentang menentukan rata-rata, median, dan modus dari suatu data: brainly.co.id/tugas/22730102<p></p>Detail jawaban<p><strong>Kelas</strong>: 12</p><p><strong>Mapel</strong>: Matematika</p><p><strong>Bab</strong>: Statistika</p><p><strong>Kode</strong>: 12.2.3</p><p></p><p><strong>#AyoBelajar #SPJ2</strong></p><br />
+                                            <h2 class="ez-toc-section" id="rumus-mencari-moment-gaya-yang-bekerja-pada-tongkat-miring-30-derajat-terhadap-vertia">
+                            23. rumus mencari moment gaya yang bekerja pada tongkat miring 30 derajat terhadap vertia</h2><br />
+                        torsi= f ×l × sin teta<br />
+                                            <h2 class="ez-toc-section" id="physics-principles-with-applications-pearson">
+                            24. Physics principles with applications pearson !</h2><br />
+                        <p><strong>Jawaban:</strong></p><p>mksd nya bang GK ngerti adku</p><br />
+                                            <h2 class="ez-toc-section" id="jelaskan-apa-yang-dimaksud-dengan-total-productmarginal-productaverange-product">
+                            25. Jelaskan apa yang dimaksud dengan total product,marginal product,averange product?</h2><br />
+                        -Produk Total(total product) adalah jumlah produksi yang dihasilkan selama jangka waktu tertentu.Contohnya: Musim Durian,buah durian hanya dapat dihasilkan pada musim durian.<br />-Produk Marjinal(marginal product) adalah pertambahan produksi yang dihasilkan dari pertambahan penggunaan satu unit faktor produksi.Contohnya: Seorang petani menambahkan tenaga kerja agar produk yang di hasilkan lebuh banyak.<br />-Produk Rata-rata(average product) adalah produk total yang dibagi dengan jumlah unit faktor produksi.AP=TL:L<br />AP=Produk Rata-rata.<br />TL=Produk Total.<br />L=Jumlah unit faktor produksi.<br /><br />maaf kalau salah:)<br /><br /><br /><br />
+                                            <h2 class="ez-toc-section" id="apakah-melakukan-uji-pearson-dan-spearman-menggunakan-spss%e2%80%8b">
+                            26. apakah melakukan uji Pearson dan spearman menggunakan SPSS​</h2><br />
+                        <p>Jawaban:ya dgn menggunakan SPSS</p><p></p><p>Penjelasan:</p><p></p><br />
+                                            <h2 class="ez-toc-section" id="rumus-dan-dimensi-moment-gaya">
+                            27. rumus Dan dimensi moment gaya</h2><br />
+                        rumus gaya = F = m.a<br />dimensi gaya = M.L.T(pangkat -2)<br />
+                                            <h2 class="ez-toc-section" id="answer-strategic-management-by-pearson-microsoft-excel">
+                            28. Answer strategic management by pearson microsoft excel !</h2><br />
+                        <p><strong>Jawaban:</strong></p><p>i was able to explain it</p><p><strong>Penjelasan:</strong></p><p></p><br />
+                                            <h2 class="ez-toc-section" id="apa-perbedaan-actual-product-dengan-product-attribute">
+                            29. Apa perbedaan Actual Product dengan Product Attribute?</h2><br />
+                        <p><strong>Jawaban:</strong></p><p></p><p><strong>Actual product</strong> adalah fitur-fitur yang ada pada produk untuk menambah nilainya. Misal desain yang menarik, nama merk, dan kemasan</p><p></p><p><strong>Product attributes</strong> adalah atribut dari produk akhir bakery yang dijual dan ditata pada display. </p><br />
+                                            <h2 class="ez-toc-section" id="hubungan-antara-total-product-dengan-average-product">
+                            30. hubungan antara total product dengan average product</h2><br />
+                        hubungan antara total produk dengan average(rata-rata) produk yakni berbanding lurus, semakin banyak total produk yg dihasilkan smakin besar pula Average product nya<br />
+                    
+                </div>
+                <div class="youtubeVideo" style="text-align: center">
+                    <h3>Video Terkait</h3>
+                    <iframe width="560" height="315"
+                        src="https://www.youtube.com/embed/VokmbR6gqq0?controls=0" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"allowfullscreen></iframe>
+                </div>
+                <footer class="entry-meta" aria-label="Meta postingan">
+                    <span class="cat-links"><span class="gp-icon icon-categories"><svg viewBox="0 0 512 512"
+                                aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em">
+                                <path
+                                    d="M0 112c0-26.51 21.49-48 48-48h110.014a48 48 0 0143.592 27.907l12.349 26.791A16 16 0 00228.486 128H464c26.51 0 48 21.49 48 48v224c0 26.51-21.49 48-48 48H48c-26.51 0-48-21.49-48-48V112z">
+                                </path>
+                            </svg></span><span class="screen-reader-text">Kategori </span>ips</span>
+            </div>
+        </article>
+    </main>
+            </div>
+            <div class="widget-area sidebar is-right-sidebar" id="right-sidebar">
+                <div class="inside-right-sidebar">
+                    <aside id="categories-2" class="widget inner-padding widget_categories">
+                        <h2 class="widget-title">Topik</h2>
+                        <ul>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://phthinksmart.github.io/apa-yg-dimaksud-pidato-persuasif.html">Apa Yg Dimaksud Pidato Persuasif</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://phthinksmart.github.io/estetika-berasal-kata-aesthetikos-yang-merupakan-bahasa.html">Estetika Berasal Kata Aesthetikos Yang Merupakan Bahasa</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://phthinksmart.github.io/cara-alami-menghilangkan-benjolan-di-dalam-hidung.html">Cara Alami Menghilangkan Benjolan Di Dalam Hidung</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://phthinksmart.github.io/emina-loose-powder-harga.html">Emina Loose Powder Harga</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://phthinksmart.github.io/cara-mempertajam-foto-online.html">Cara Mempertajam Foto Online</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://phthinksmart.github.io/wates-ke-jogja.html">Wates Ke Jogja</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://phthinksmart.github.io/qs-al-luqman-ayat-13-14.html">Qs Al Luqman Ayat 13 14</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://phthinksmart.github.io/gambar-kolase-dari-koran-bekas.html">Gambar Kolase Dari Koran Bekas</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://phthinksmart.github.io/daihatsu-hijet-modif.html">Daihatsu Hijet Modif</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://phthinksmart.github.io/coil-tmn80.html">Coil Tmn80</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://phthinksmart.github.io/cara-pakai-neogen.html">Cara Pakai Neogen</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://phthinksmart.github.io/tentukan-volume-kubus-berikut.html">Tentukan Volume Kubus Berikut</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://phthinksmart.github.io/cara-menentukan-kelas-median.html">Cara Menentukan Kelas Median</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://phthinksmart.github.io/penyebab-varises.html">Penyebab Varises</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://phthinksmart.github.io/20-derajat.html">20 Derajat</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://phthinksmart.github.io/pilihan-hatiku-chord.html">Pilihan Hatiku Chord</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://phthinksmart.github.io/upaya-pertahanan-dan-keamanan-negara-dilaksanakan-melalui-sistem.html">Upaya Pertahanan Dan Keamanan Negara Dilaksanakan Melalui Sistem</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://phthinksmart.github.io/nama-anak-nabi-ishaq.html">Nama Anak Nabi Ishaq</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://phthinksmart.github.io/contoh-buku-fiksi.html">Contoh Buku Fiksi</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://phthinksmart.github.io/kluwung-tegese.html">Kluwung Tegese</a>
+                                </li>
+                                                    </ul>
+
+                    </aside>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <div class="site-footer">
+        <footer class="site-info" aria-label="Situs" itemtype="https://schema.org/WPFooter" itemscope>
+            <div class="inside-site-info grid-container">
+                <div class="copyright-bar">
+                    <span class="copyright">&copy; 2023 <a href="https://phthinksmart.github.io"
+                            itemprop="url">QnA</a></span>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <a title="Gulirkan kembali ke puncak laman" aria-label="Gulirkan kembali ke puncak laman" rel="nofollow"
+        href="#" class="generate-back-to-top" data-scroll-speed="400" data-start-scroll="300">
+        <span class="gp-icon icon-arrow-up"><svg viewBox="0 0 330 512" aria-hidden="true"
+                xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill-rule="evenodd"
+                clip-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="1.414">
+                <path
+                    d="M305.863 314.916c0 2.266-1.133 4.815-2.832 6.514l-14.157 14.163c-1.699 1.7-3.964 2.832-6.513 2.832-2.265 0-4.813-1.133-6.512-2.832L164.572 224.276 53.295 335.593c-1.699 1.7-4.247 2.832-6.512 2.832-2.265 0-4.814-1.133-6.513-2.832L26.113 321.43c-1.699-1.7-2.831-4.248-2.831-6.514s1.132-4.816 2.831-6.515L158.06 176.408c1.699-1.7 4.247-2.833 6.512-2.833 2.265 0 4.814 1.133 6.513 2.833L303.03 308.4c1.7 1.7 2.832 4.249 2.832 6.515z"
+                    fill-rule="nonzero" />
+            </svg></span>
+    </a>
+    <script id="generate-a11y">
+        ! function() {
+            "use strict";
+            if ("querySelector" in document && "addEventListener" in window) {
+                var e = document.body;
+                e.addEventListener("mousedown", function() {
+                    e.classList.add("using-mouse")
+                }), e.addEventListener("keydown", function() {
+                    e.classList.remove("using-mouse")
+                })
+            }
+        }();
+    </script>
+    <!--[if lte IE 11]>
+<script src='https://phthinksmart.github.io/js/classList.min.js' ?ver=3.2.4' id='generate-classlist-js'></script>
+<![endif]-->
+    <script id='generate-menu-js-extra'>
+        var generatepressMenu = {
+            "toggleOpenedSubMenus": "1",
+            "openSubMenuLabel": "Buka Submenu",
+            "closeSubMenuLabel": "Tutup submenu"
+        };
+    </script>
+    <script src='https://phthinksmart.github.io/js/menu.min.js' ?ver=3.2.4' id='generate-menu-js'></script>
+    <script id='generate-navigation-search-js-extra'>
+        var generatepressNavSearch = {
+            "open": "Buka Kolom Pencarian",
+            "close": "Tutup Kolom Pencarian"
+        };
+    </script>
+    <script src='https://phthinksmart.github.io/js/navigation-search.min.js' ?ver=3.2.4' id='generate-navigation-search-js'></script>
+    <script id='generate-back-to-top-js-extra'>
+        var generatepressBackToTop = {
+            "smooth": "1"
+        };
+    </script>
+    <script src='https://phthinksmart.github.io/js/back-to-top.min.js' ?ver=3.2.4' id='generate-back-to-top-js'></script>
+    <script type='text/javascript' src='//jd3j7g5z1fqs.com/96/78/7a/96787a1945876b1a9c10f79941441964.js'></script>
+  <!-- Histats.com  START  (aync)-->
+<script type="text/javascript">var _Hasync= _Hasync|| [];
+_Hasync.push(['Histats.start', '1,4739059,4,0,0,0,00010000']);
+_Hasync.push(['Histats.fasi', '1']);
+_Hasync.push(['Histats.track_hits', '']);
+(function() {
+var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+hs.src = ('//s10.histats.com/js15_as.js');
+(document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+})();</script>
+<noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4739059&101" alt="" border="0"></a></noscript>
+<!-- Histats.com  END  -->
+</body>
+
+</html>
